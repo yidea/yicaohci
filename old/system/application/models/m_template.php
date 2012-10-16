@@ -1,0 +1,17 @@
+<?php
+/**
+ * m_template
+ *
+ * @property CI_DB_active_record $db
+ */
+class m_template extends Model {
+  function m_template(){
+    parent::Model();
+  }
+
+  public function add_product($product_id,$product_name){
+    
+  }
+   
+}
+?>

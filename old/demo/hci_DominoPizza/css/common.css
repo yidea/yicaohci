@@ -1,0 +1,55 @@
+#skip_links{position: absolute; height: 0;overflow: hidden;} /*accessiblity aid*/
+
+.mb-10px{margin-bottom: 10px;}/*margin-bottom:10px*/
+
+/*table*/
+table caption{text-align: left; font-weight: bold;font-size: 18px;}
+table th{text-align: center;vertical-align: baseline; font-weight: bold}
+table td{padding:0 10px 0 10px; border:1px solid #000;vertical-align: top; }
+
+pre{/*html code */
+  border:1px solid #999;
+  border-left-width:10px;
+  padding:0;
+  background-image: url(../images/common/pre_code_bg.gif);
+  background-repeat: repeat;
+  background-position: left top;
+  width:700px;
+  overflow:auto;
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 18px;}
+pre code{/*html code */
+  display: block;
+  margin-left: 20px;}
+
+/*background color*/
+.bg_white{background-color: #fff}
+.bg_greylight{background-color: #eef;}
+.bg_grey{background-color: #ddd;}
+.bg_greydark{background-color: #ccc;}
+.bg_green{background-color:#8FC73E;}
+.bg_yellow{background-color: yellow;}
+
+.height_equal{height:300px;}
+.highlight_normal{font-weight: bold;}
+
+div.spacer{height: 1em;background-color: #8FC73E;}
+
+div#header{}
+div#navbar{}
+div#navbar ul{padding:10px 0;list-style: none;display: block;}
+div#navbar ul li{float: left;}
+
+div#banner_left{}
+div#banner_left_inner{padding:0 10px ;border:solid 10px #ddd;}
+div#banner_right{}
+div#banner_right_inner{padding:0; border:solid 10px #ddd;}
+div.content_main{}
+
+/*button backHome effect*/
+div.backHome{padding:10px;}
+.button, .button:visited 			{background:#000000 url(../images/alert-overlay.png) repeat-x; display:inline-block; padding:5px 10px 6px; color:#fff; text-decoration:none; -moz-border-radius:5px; -webkit-border-radius:5px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5); text-shadow:0 -1px 1px rgba(0,0,0,0.25); border-bottom:1px solid rgba(0,0,0,0.25); position:relative; cursor:pointer; font-size:13px; font-weight:bold; line-height:1; border:0;}
+.button:hover						{background-color:#111; color:#fff; text-decoration:none;}
+.button:active						{top:1px;}
+.green{background-color: #6DAF15 !important;}

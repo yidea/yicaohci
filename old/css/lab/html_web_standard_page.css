@@ -1,0 +1,59 @@
+/* 
+    Document   : html_web_standard_page
+    Created on : Nov 13, 2010, 11:07:38 PM
+    Author     : Yi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+input#txtipt2,textarea#id{border:1px solid; border-color: #666 #ccc #ccc #666;}
+input#txtipt_font{font:1em Helvetica,sans-serif;color:#333;}
+input#txtipt_bg:focus, textarea#txtipt_bg:focus { background: yellow;}
+p#inline{border:1px dotted red;}
+p#inline span{padding:5px;background-color: #ccc}
+.access_aid{position: absolute; height: 0;overflow: hidden;}
+#height_overflow{border:1px solid red;width:500px;height:60px; overflow: auto;}
+
+#testinglink a{color:#900; font-weight: bold; text-decoration: none;}
+#testinglink a:visited{color:#c00;}
+#testinglink a:hover{color:#900;text-decoration: underline;}
+
+#background_image{padding-left:50px;
+  height:40px;
+  border: 1px solid red;
+  background-image:url(../../images/flickr.png);
+  background-position:left top;
+  background-repeat: no-repeat;
+  background-color: #fff;/*area that are not taken up by background image will be transparent,unless you set the background-color*/}
+
+#ul_list{
+  list-style-type: square;
+  list-style-position: inside;}
+#ol_list{
+  list-style-image: url(../../images/triangle.gif);
+  list-style-position: inside;}
+#ul-horizon li{
+  float:left;
+  padding-left: 10px;}
+
+ul#tab-list li{
+  float:left;
+  border:1px solid #bbb;
+  border-bottom-width: 0;/*no bottom border for li*/}
+ul#tab-list a{  
+  display: block;/*make a block level,like a tab button,enlarge link area*/
+  background-color: #eee;
+  width:8em;
+  text-align: center;
+  text-decoration: none;}
+ul#tab-list a:hover{background-color: #ddf;}
+ul#tab-list li#selected{border-color:black;}
+ul#tab-list li#selected a{
+  position:relative;
+  top:1px;/*cover bottom 1px border*/
+  background-color: #fff;
+  font-weight:bold;}
+div#tab-content{
+  border:1px solid;
+  padding:10px;
+  width:36em;}

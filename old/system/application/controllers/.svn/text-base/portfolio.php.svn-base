@@ -1,0 +1,138 @@
+<?php
+class portfolio extends MY_Controller {
+  private $_layout_template = "v_layout";
+  private $_webPortfolioTitle ='';//new title for web design portfolio
+  private $_printPortfolioTitle='';//new title for print design portfolio
+
+  function portfolio() {
+    parent::MY_Controller();
+    $this->_webPortfolioTitle = '<a href="'.base_url().'portfolio"> Yi Cao\'s Portfolio</a> | Web Design';
+    $this->_printPortfolioTitle ='<a href="'.base_url().'portfolio"> Yi Cao\'s Portfolio</a> | Print Design';
+  }
+
+  function index() {//index page
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_portfolio';
+    $data['html_title']= 'Portfolio - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+
+  /*Web Design Projects*/
+  function webdesign_project_beq(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_beq';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_ajb(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_ajb';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_azwedding(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_azwedding';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_workingartvideo(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_workingartvideo';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_reneArchitect(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_reneArchitect';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_greenTour(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_greenTour';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_newRand(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_newRand';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function webdesign_project_studentCompass(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_webdesign_project_studentCompass';
+    $data['html_title']='Portfolio - Web Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_webPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  /* end -Web Design Projects*/
+
+  /*Print Design Projects*/
+  function printDesign_project_zhongLian(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_printDesign_project_zhongLian';
+    $data['html_title']='Portfolio - Print Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_printPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function printDesign_project_dmu(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_printDesign_project_dmu';
+    $data['html_title']='Portfolio - Print Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_printPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function printDesign_project_logo(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_printDesign_project_logo';
+    $data['html_title']='Portfolio - Print Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_printPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  function printDesign_project_tshirt(){
+    $data = array();
+    $data['current_page']=($this->uri->segment(1)!=FALSE) ? $this->uri->segment(1) : 'index';//current page
+    $data['v_contentpage']='v_printDesign_project_tshirt';
+    $data['html_title']='Portfolio - Print Design - Yi Cao on HCI';
+    $data['portfolioTitle']=$this->_printPortfolioTitle;
+    $this->load->vars($data);
+    $this->load->view($this->_layout_template);
+  }
+  /*end - Print Design Projects*/
+
+}
+?>

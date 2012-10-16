@@ -1,0 +1,48 @@
+<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.roundabout-1.0.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { //Start up our Featured Project Carosuel
+    $('#featured ul').roundabout({
+      easing: 'easeOutInCirc',
+      duration: 520
+    });
+  });
+</script>  
+
+<!-- Featured Image Slider -->
+<div id="featured" class="clearfix grid_12">
+  <ul>
+    <li>
+      <a  href="<?php echo base_url(); ?>portfolio/webdesign_project_ajb">
+        <span>A Jewish Beginning Inc.</span>
+        <img class="" src="<?php echo base_url(); ?>images/portfolio/webdesign_project_ajb1.jpg"  alt="A Jewish Beginning Inc. Project"/>
+      </a>
+    </li>
+    <li>
+      <a  href="<?php echo base_url(); ?>portfolio/webdesign_project_workingartvideo">
+        <span>Working Art Video</span>
+        <img class="" src="<?php echo base_url(); ?>images/portfolio/webdesign_project_workingartvideo1.jpg" alt="Working Art Video"/>
+      </a>
+    </li>    
+    <li>
+      <a  href="<?php echo base_url(); ?>portfolio/webdesign_project_beq">
+        <span>Band Equity Group</span>
+        <img class="" src="<?php echo base_url(); ?>images/portfolio/webdesign_project_beq2.jpg"  alt="Band Equity Group Project"/>
+      </a>
+    </li>    
+    <li>
+      <a  href="<?php echo base_url(); ?>portfolio/webdesign_project_reneArchitect">
+        <span>Rene - Architect Portfolio</span>
+        <img class="" src="<?php echo base_url(); ?>images/portfolio/webdesign_project_reneArchitect2.jpg" alt="Rene's Architectural Portfolio site"/>
+      </a>
+    </li>
+    <li>
+      <a  href="<?php echo base_url(); ?>portfolio/webdesign_project_azwedding">
+        <span>Afreen&Zeeshan Wedding</span>
+        <img class="" src="<?php echo base_url(); ?>images/portfolio/webdesign_project_azwedding1.jpg" alt="Afreen&Zeeshan Wedding"/>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+<div class="hr grid_12 clearfix">&nbsp;</div>

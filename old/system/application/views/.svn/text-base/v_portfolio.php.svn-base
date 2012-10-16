@@ -1,0 +1,111 @@
+<!-- Catch Line and Link -->
+<h2 class="grid_12 caption clearfix">Yi Cao's Portfolio</h2>
+
+<div class="pr grid_12 clearfix">&nbsp;</div>
+
+<!-- Portfolio Items -->
+<!-- Section 1 -->
+<!-- Section 3 -->
+<div class="catagory_1 clearfix">
+  <!-- Row 1 -->
+  <div class="grid_3" >
+    <span class="meta"></span>
+    <h4 class="title ">Web Design</h4>
+    <div class="hr clearfix dotted">&nbsp;</div>
+    <p >There are English and Chinese web projects, I worked as a web design freelancer when I was at New York and Boston. I worked at Ouruni.com when I was at China </p>
+  </div>
+
+  <div class="grid_9">
+    <!--r1 c1-->
+    <a class="portfolio_item float alpha" href="<?php echo base_url();?>portfolio/webdesign_project_ajb">
+      <span>A Jewish Beginning Inc.</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_ajb1.jpg"  alt="A Jewish Beginning Inc. Project"/>
+    </a>
+
+    <!--r1 c2-->
+    <a class="portfolio_item float " href="<?php echo base_url();?>portfolio/webdesign_project_beq">
+      <span>Band Equity Group</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_beq2.jpg"  alt="Band Equity Group Project"/>
+    </a>
+    
+    <!--r1 c3-->
+    <a class="portfolio_item float omega" href="<?php echo base_url();?>portfolio/webdesign_project_azwedding">
+      <span>Afreen&Zeeshan Wedding</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_azwedding1.jpg" alt="Afreen&Zeeshan Wedding"/>
+    </a>
+    
+    <!--r2 c1-->
+    <a class="portfolio_item float alpha" href="<?php echo base_url();?>portfolio/webdesign_project_workingartvideo">
+      <span>Working Art Video</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_workingartvideo1.jpg" alt="Working Art Video"/>
+    </a>
+    
+    <!--r2 c2-->
+    <a class="portfolio_item float " href="<?php echo base_url();?>portfolio/webdesign_project_reneArchitect">
+      <span>Rene - Architect Portfolio</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_reneArchitect2.jpg" alt="Rene's Architectural Portfolio site"/>
+    </a>
+    
+    <!--r2 c3-->
+    <a class="portfolio_item float omega" href="<?php echo base_url();?>portfolio/webdesign_project_greenTour">
+      <span>Hawaii Green Tours</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_greenTour1.jpg" alt="Hawaii Green Tour"/>
+    </a>
+
+    <!--r3 c1-->
+    <a class="portfolio_item float alpha" href="<?php echo base_url();?>portfolio/webdesign_project_newRand">
+      <span>NewRand Logistics Research Center</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_newRand1.jpg" alt="NewRand Logistics Research Center"/>
+    </a>
+
+   <!--r3 c2-->
+    <a class="portfolio_item float " href="<?php echo base_url();?>portfolio/webdesign_project_studentCompass">
+      <span>Chinese College Students Compass</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/webdesign_project_studentCompass1.jpg" alt="Chinese College Students Compass"/>
+    </a>
+    
+  </div>
+</div>
+
+<div class="pr clearfix grid_12">&nbsp;</div>
+
+<div class="catagory_1 clearfix">
+  <!-- Row 1 -->
+  <div class="grid_3 " >
+    <span class="meta"></span>
+    <h4 class="title ">Print Design</h4>
+    <div class="hr clearfix dotted">&nbsp;</div>
+    <p>Though I have a Computer Science related bachelor degree,I still have a design eye,I have 6 years training in Fine Art, and 2 years experience in Print Design area</p>
+  </div>
+  <div class="grid_9">
+
+    <!--r1 c1-->
+    <a class="portfolio_item float alpha" href="<?php echo base_url();?>portfolio/printDesign_project_zhongLian">
+      <span>ZhongLian IT Training Advertisement</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/printDesign_project_zhongLian1.jpg" alt="ZhongLian IT Training Advertisement"/>
+    </a>
+    
+    <!--r1 c2-->
+     <a class="portfolio_item float" href="<?php echo base_url();?>portfolio/printDesign_project_dmu">
+      <span>Dalian Maritime University Advertisement</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/printDesign_project_dmu1.jpg" alt="ZhongLian IT Training Advertisement"/>
+    </a>
+
+    <!--r1 c3-->
+     <a class="portfolio_item float omega" href="<?php echo base_url();?>portfolio/printDesign_project_logo">
+      <span>Logo Design</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/printDesign_project_logo3.jpg" alt="Logo Design"/>
+    </a>
+    
+     <!--r2 c1-->
+    <a class="portfolio_item float alpha" href="<?php echo base_url();?>portfolio/printDesign_project_tshirt">
+      <span>Tshirt Design</span>
+      <img class="" src="<?php echo base_url();?>images/portfolio/printDesign_project_tshirt1.jpg" alt="Tshirt Design"/>
+    </a>
+  
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="pr clearfix grid_12">&nbsp;</div>
+
+   

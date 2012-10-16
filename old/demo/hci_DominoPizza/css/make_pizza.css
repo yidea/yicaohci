@@ -1,0 +1,186 @@
+body {/*Yi 12/6/10 10:34 PM*/
+	font: 12px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+label{vertical-align: top;cursor: pointer;}
+div#make_pizza{
+  margin:0 auto;
+  background-image:url(../images/bg_reateYourOwn.png);background-repeat: no-repeat;
+  background-position:0 10px;
+  background-attachment: scroll;
+  width:984px;
+  height:930px;
+}
+#header{ }
+#order_flow{height: 240px;}
+ 
+#left_part{margin-left: 100px;}
+#middle_part{}
+
+.div_inline{
+  float:left;
+  display:inline;
+  margin-left: 10px;
+  /*need width to work with IE6*/
+}
+
+.pizza_ingredients_outer{
+  font-size: 12px;
+  padding:10px;
+}
+.pizza_ingredients_outer label{
+font-size: 12px;
+font-weight: bold;
+  color: #296DA5;
+background: #fff;
+padding-left:8px;
+}
+
+form#frm_makepizza{
+  font-size: 11px;
+}
+form#frm_makepizza label{
+  display: inline-block;  
+}
+
+.pizza_element{
+  margin-bottom: 10px;
+}
+#size h3{background-image: url(../images/bg_size.gif);
+   background-position: right; background-repeat: no-repeat;
+}
+#crusts h3{
+  background-image: url(../images/bg_crust.gif);
+  background-position: right; background-repeat: no-repeat;
+}
+
+
+.pizza_outer{/*pizza cake*/
+  margin-top:10px;
+  margin-left:30px;
+  margin-right: 10px;
+
+  background-image: url(../images/pizza_medium.jpg);
+  background-repeat: no-repeat;
+  width: 220px;
+  height:220px;
+}
+.pizza_topping1{/*topping meat*/ 
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  
+}
+.pizza_topping2{/*topping veggie*/  
+  background-repeat: no-repeat;
+}
+
+.img_pizza_topping{
+  margin-top: 25px;
+  margin-left: 20px;  
+}
+
+div#topping_meat{ 
+  
+}
+
+form h3{
+  font-size: 12px;
+  color: #296DA5;
+background: #fff;
+padding-left:8px;
+  /*  background-color: #F7CB6B;*/
+}
+form li{
+  padding-left:10px;
+  background: #CEE3F7;
+  margin-bottom: 4px;
+  /*  background-color: #F8E4B6;*/
+}
+.li_highlight{
+  background-color: #DE3031;
+/*  background-color: #D65131;*/
+  color:#fff;  
+}
+
+div#sauce_cheese h3{    
+  padding-right: 100px;
+  height: 19px;  
+  background-image:url(../images/bg_side.gif); background-repeat: no-repeat; background-position: right ;
+}
+div#topping_meat h3{
+  padding-right: 95px;  
+  height: 19px;  
+  background-image:url(../images/bg_side.gif); background-repeat: no-repeat; background-position: right;
+}
+
+div#topping_veggies h3{
+  padding-right: 94px;  
+  height: 19px;background-image:url(../images/bg_side.gif); background-repeat: no-repeat; background-position: right;
+}
+div#sauce_cheese label{  
+  width:37px;
+}
+
+#topping_meat label{  
+  width:90px;
+}
+#topping_veggies label{  
+  width:90px;
+}
+
+div#order_detail{
+  position:relative;
+  font-size:12px;
+  margin-left: 30px;   
+  width: 215px;
+}
+/*pizza_module*/
+div.pizza_module{
+  margin-left: 10px;
+  width:210px;}
+div.pizza_module_header{
+  background-color: #73A6CE;
+  width:100%;
+  color:#fff;
+  font-weight: bold;
+}
+div.pizza_module li{
+  margin-bottom: 0;
+  background-color: #fff;
+
+}
+div.pay{
+  padding-top:10px;
+  background-image: url(../images/space_line.gif);
+  background-repeat: no-repeat;
+  background-color: #fff;  
+}
+#tax{
+  float:right;
+}
+ #total_price{float:right;}
+#total{font-weight: bold;}
+.pizza_ingredients li{
+  background-color: #fff;
+}
+
+/*price detail: add delete image 12/7/10 3:03 PM*/
+.pizza_module_content li{
+  padding-left:20px;
+  background-image: url(../images/icon_delete.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.pizza_module_content li span{
+  float:right;
+}
+
+#checkout{margin-top: 5px;}
+
+#hot_deals{
+  position:absolute;
+  top:310px;
+  left:4px;
+
+}
+

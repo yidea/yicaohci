@@ -1,0 +1,101 @@
+/*Form start*/
+form fieldset{
+  width: 600px;
+  color: #333;
+}
+
+form legend{font-weight: bold;
+padding-left: 5px;
+}
+form h3{padding-left: 5px; }
+form label {
+  display: inline-block;
+  padding-left:5px;
+  width: 100px;/*custom label width*/  
+  vertical-align:baseline; 
+}
+form ol{list-style-type: none;list-style-position: inside;margin:0;}
+form li{margin:0;padding:5px 0;}
+form em{/*required* */
+  font-style: normal;
+  font-weight: bold;  
+  color: #f00;
+}
+
+/*form align 3 option */
+form.form_left_align label{text-align: left;}
+form.form_right_align label{text-align: right;}
+form.form_top_align label{display: block;}
+/*form input error background*/
+.error_input{background-color: #FFCCBA;}
+
+/*style#1 basic */
+form.basic fieldset{border:1px solid #ccc;}
+form.basic h3{
+  background-color: #1B4B94; /*blue*/
+  color:#fff;  
+}
+form.basic input.short{width: 150px;}/*long input type*/
+form.basic input.long{width:300px;}
+form.basic fieldset.submit{border-style: none;background-image: none;}
+/*form style basic end*/
+
+/*style#2 gradual start*/
+form.gradual fieldset {
+  background-attachment:scroll;
+  background-color:transparent;
+  background-image:url("../images/common/fieldset_gradual_bk_gray.gif");/*custom color*/
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  border-style: none;
+  border-top-color:#aaa;gray-#aaa;green-#C9DCA6;
+  border-top-style:solid;
+  border-top-width:1px;
+}
+form.gradual fieldset li {
+  background-attachment:scroll;
+  background-color:transparent;
+  background-image:url("../images/common/fieldset-gradual_divider_gray.gif");
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  padding-bottom:7px;
+  padding-top:5px;    
+}
+/*form style gradual end*/
+
+/*Messagebox start*/
+.messagebox_info, .messagebox_success, .messagebox_warning, .messagebox_error, .messagebox_validation {
+border: 1px solid;
+margin-bottom: 10px;
+padding:15px 10px 15px 50px;
+width:500px;/*width self custom*/
+font-size: .75em;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.messagebox_info {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('../images/common/messagebox_info.png');
+}
+.messagebox_warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('../images/common/messagebox_warning.png');
+}
+.messagebox_success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../images/common/messagebox_success.png');
+}
+.messagebox_error {/*process unsuccessful*/
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('../images/common/messagebox_error.png');
+}
+.messagebox_validation {
+color: #D63301;
+background-color: #FFCCBA;
+background-image: url('../images/common/messagebox_validation.png');
+}
+/*Messagebox end*/

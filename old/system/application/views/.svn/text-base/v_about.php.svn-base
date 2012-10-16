@@ -1,0 +1,67 @@
+<!-- Caption Line -->
+<h2 class="grid_12 caption">About Yi Cao</h2>
+
+<div class="hr grid_12 clearfix">&nbsp;</div>
+
+<!-- Column 1 / Content -->
+
+<div class="grid_8 fontLarge">
+  <h4 class="page_title">Who am I</h4>
+  <div class="hr dotted clearfix ">&nbsp;</div>
+  <p>
+    My name is <strong>Yi Cao</strong> (<strong>Ethan</strong>). I'm an interaction designer and a first-year graduate student in Human Factor program at San Jose State University.
+    I was born in Dalian, China, where I did my 6 years fine art training and 4 years college in Information System. I have experience working in print design and web design industry.
+  </p>
+  <p>    
+    While traveling and freelancing in east coast of U.S. in 2009, I encountered people who had awful experience on web and people with disability who can not visit most websites because not accessible.
+    That is when I began to think about User Experience as a designer and how to find ways to improve the <strong>Aesthetics</strong> and at the same time maximum the <strong>Accessibility</strong> and <strong>Usability</strong>.
+    That is the initiative why I go back to school to study Human Factor later.
+
+    </p>
+  <p>
+    Besides Interaction Design, I'm also interested in Web and Mobile apps User Research, Prototyping, and Usability Evaluation. I believe in Design Guideline, Usability Testing and Data Analysis(<i>"If you can not measure it, you can not improve it"</i>).
+  </p>
+  <p>
+	I also blog and twitter for what I am studying on, I'm currently studying on Remote Usability testing for website, Web Usability guideline and Web Accessibility for disabled and seniors. You can find related articles at my <a href="<?php echo base_url();?>blog">Blog - Yi Cao on HCI</a>.    
+  </p>
+  <p>You can reach me at email4yi(at)gmail.com</p>
+
+</div>
+
+<!-- Column 2 / Sidebar -->
+<div class="grid_4">
+  <h4>My Events</h4>
+  <div class="hr dotted clearfix">&nbsp;</div>
+  <dl class="history">
+    <dt>2010</dt>
+    <dd>
+    <strong>Start</strong> Human Factor program in SJSU. <br/>
+    <strong>Volunteer</strong> as Web designer & developer at <a href="http://www.taprootfoundation.org">Taproot Foundation</a> helping Non-Profit-Organization in Bay area.
+      <br/>
+    <strong>Current</strong> project -redesign <a href="http://www.ehss.org">EHSS.org</a> - a NPO offers tutoring and internship for Bay area high school students, project will be done by Jan.2012.
+    </dd>
+  <dt>2008</dt>
+    <dd>
+      <strong>Travel</strong> and Freelance as web designer in east coast of U.S. 
+      <br/>
+      <strong>Encounter</strong> people who had awful experience on web and people with disability who can not visit several sites because not accessible. That is where I know User Experience and Human Factor.
+    </dd>
+    <dt>2007</dt>
+    <dd>
+      <strong>Begin</strong> Management Information System Graduate study in <a href="http://www.dlmu.edu">Dalian Maritime University</a> with full scholarship.
+      <br/>
+      <strong>Finished</strong> the coursework in one year, while at the same time, found myself lost in career and life, I quit the program and came to U.S exploring more about myself.
+    </dd>
+
+    <dt>2003</dt>
+    <dd>
+    <strong>Start</strong> college at <a href="http://www.dlmu.edu">Dalian Maritime University</a>, majoring in Information System.
+    <br/>
+    <strong>Hands</strong> wet in Print design and Web design industry, and ran startup with friends.
+    </dd>
+
+    <dt>1994</dt>
+    <dd><strong>Began</strong> 6 years fine art training.</dd>
+  </dl>
+</div>
+<div class="hr grid_12 clearfix">&nbsp;</div>

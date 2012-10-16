@@ -1,0 +1,294 @@
+/*
+
+eat fresh styles
+
+color palette
+background: #b2c978
+text color: #0471b6
+form outline, box color: #ecebeb
+#a1a1a1
+*/
+
+
+
+body {
+	background: #fff;
+	color: #333;
+	font-size: 11px;
+	padding: 0px 0 40px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	text-align: left;
+}
+
+h2 {
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+p {
+	border: 1px solid #666;
+	overflow: hidden;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.container_12 {
+    background: #b2c978; 
+	margin-bottom: 20px;
+}
+
+.container_16 {
+	background: #fff url(../img/16_col.gif) repeat-y;
+}
+
+.container_24 {
+	background: #fff url(../img/24_col.gif) repeat-y;
+}
+
+#header {
+    background: url(../img/header-roof.png);
+    width: 940px;
+    height: 121px;
+    margin: 0 auto;
+}
+
+
+#home-page .box-outer {
+    width: 540px;
+    background-color: #fff;
+    margin: 20px auto;
+    border: 1px solid #a1a1a1;
+}
+
+#home-page .box-inner {
+    width: 520px;
+    height: 320px;
+    background-color: #fff;
+    margin: 0px auto;
+    border: 10px solid #ecebeb;
+}
+
+#home-page h1 {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+
+
+#produce-page .box-outer {
+    width: 740px;
+    background-color: #fff;
+    margin: 20px auto;
+    border: 1px solid #a1a1a1;
+}
+
+#produce-page .box-inner {
+    width: 720px;
+    height: 450px;
+    background-color: #fff;
+    margin: 0px auto;
+    border: 10px solid #ecebeb;
+}
+
+
+#produce-page h1 {
+    padding-top: 40px;
+    padding-left: 0px;
+    font-size: 2em;
+    margin-bottom: 3px;
+}
+
+#produce-page p {
+    border: 0px;
+    margin: 0;
+}
+
+.black-line {
+    border: 0 #000 solid;
+    border-top-width: 1px;
+    margin: 0;
+}
+
+.gray-line {
+    border: 0 #a1a1a1 solid;
+    border-top-width: 1px;
+    margin: 0;
+}
+
+.box-2 {
+    width: 230px;
+    background-color: #ecebeb;
+    float: right;
+    margin-top: 60px;
+}
+
+
+.box-2 span {
+    color: #0471b6;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.box-2 p {
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#login label {
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    display: block;
+
+}
+
+#login input[type="text"], input[type="password"] {
+    color: #000;
+    font-size: 1.2em;
+    border: 1px solid #a1a1a1;
+    text-align: left;
+    padding: 5px 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+
+#login input[type="checkbox"] {
+    color: #000;
+    font-size: 1.2em;
+    border: 0;
+    text-align: left;
+    padding: 5px 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+
+#login span {
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+#login button {
+    margin: 10px 20px;    
+    padding: 0;
+    border: 0;
+    color: #000;
+    font-size: 1.4em;
+    background:  url(../img/login-button-background.png);
+    width: 104px;
+    height: 37px;
+    cursor: pointer;
+}
+
+#produce {
+    padding-top: 20px;
+}
+
+#produce label {
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+    margin-bottom: 4px;
+    float: left;
+    width: 60px;
+
+}
+
+#produce input[type="text"] {
+    color: #000;
+    font-size: 1.2em;
+    border: 1px solid #a1a1a1;
+    text-align: left;
+    padding: 5px 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+
+#produce select {
+    color: #000;
+    font-size: 1.2em;
+    border: 1px solid #a1a1a1;
+    text-align: left;
+    height: 28px;
+    width: 150px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+#produce input[type="date"] {
+    color: #000;
+    font-size: 1.2em;
+    border: 1px solid #a1a1a1;
+    text-align: left;
+    padding: 5px 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+#produce #save-button {
+    margin: 10px 0px;    
+    padding: 0;
+    border: 0;
+    color: #000;
+    font-size: 1.4em;
+    background:  url(../img/login-button-background.png);
+    width: 104px;
+    height: 37px;
+}
+
+#produce #add-button {
+    margin: 10px 60px 10px 0px;    
+    padding: 0;
+    border: 0;
+    color: #000;
+    font-size: 1.2em;
+    background:  url(../img/add-button-background.png);
+    width: 135px;
+    height: 24px;
+    float: right;
+
+}

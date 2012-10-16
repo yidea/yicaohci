@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Description" content="Domino's Pizza lets you browse coupons and order online - try the all new hand tossed crust, robust sauce and shredded mozzarella cheese.">
+      <meta name="Keywords" content="pizza, pizzas, a pizza, new pizza, new crust, pizza delivery, pizza menu, pizza coupons, order pizza online, dominos, domino's pizza, dominos pizza, domino, dominoes, domin, domi, dominoes pizza, dominos pizza menu, dominos coupons">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <title>Domino's Pizza, Order Pizza Online for Delivery - Dominos.com</title>
+        <link type="text/css" rel="stylesheet" href="css/dominos_home.css" media="all"/>
+        <link type="text/css" rel="stylesheet" href="css/scrollable_horizon.css" media="all"/>
+        <link type="text/css" rel="stylesheet" href="css/tabs-accordion.css" media="all"/>
+        <link type="text/css" rel="stylesheet" href="css/home.css" media="all"/>
+
+        <!--[if IE 6]>
+	<link href="http://cache.dominos.com/express010500/css/ie6.css?010500" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if IE 7]>
+	<link href="http://cache.dominos.com/express010500/css/ie7.css?010500" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if IE 8]>
+	<style>
+	.notice-cta li	{
+		font-size:12px;
+	}
+	</style>
+        <![endif]-->
+        <link type="image/x-icon" rel="shortcut icon" href="http://cache.dominos.com/express010500/images/dominos5.ico"/>
+        <link type="image/x-icon" rel="icon" href="http://cache.dominos.com/express010500/images/dominos5.ico"/>
+
+        <!-- yi 12/7/10 10:42 PM-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+        <script>
+          // execute your scripts when the DOM is ready. this is mostly a good habit
+          $(function() {
+
+            // initialize scrollable
+            $(".scrollable").scrollable();
+
+            $("#accordion").tabs("#accordion div.pane", {tabs: 'h2', effect: 'slide', initialIndex: null});
+
+          });
+        </script>
+
+        <!-- Base libraries (must be loaded before anything else) -->
+        </head>
+        <body class="rollout">
+          <div id="wrapper">
+            <div id="header">
+              <h1> <a href=""> <img class="logo" src="images/logo.png" alt="Domino's Pizza"> </a> </h1>
+              <div class="links"> <a href="" target="_blank">Store Finder</a> <span class="links-divider">|</span> <a href="/pages/tracker.jsp" target="_blank">Tracker</a> <span class="links-divider">|</span> <a href="">Log In</a><span class="links-divider">|</span> <a href="" target="_blank">Espa&ntilde;ol</a> </div>
+              <div id="nav">
+                <ul>
+                  <li class="nav-tab" id="olohome"><a href="/index.jsp" title="HOME" class="active">Home</a></li>
+                  <li class="nav-tab" id="entrees" ><a href="" title="PIZZA and ENTREES">PIZZA & Entrees</a></li>
+                  <li class="nav-tab" id="sides" ><a href="" title="SIDES and DESSERTS">SIDES & DESSERTS</a></li>
+                  <li class="nav-tab" id="drinks" ><a href="" title="DRINKS">DRINKS</a></li>
+                  <li class="nav-tab" id="coupons" ><a href="" title="HOT DEALS">HOT DEALS</a></li>
+                  <li class="clr">
+                    <!--  -->
+                  </li>
+                </ul>
+              </div>
+              <div id="sub-nav">
+                <ul >
+                  <li class="delivery-type none">
+                    <label>
+                      <input onclick="SiteBuilder.setServiceMethod('Delivery');" type="radio" name="delivery-type" value="Delivery" />
+                      Delivery</label>
+                    <span>|</span>
+                    <label>
+                      <input onclick="SiteBuilder.setServiceMethod('Carryout');" type="radio" name="delivery-type" value="Carryout" checked/>
+                      Carryout</label>
+                    <span>:</span> </li>
+                  <li class="FindStoreForm">
+                    <label>Find Store to Order:
+                      <input type="text" name="textfield" value="City, State or Zipcode" class="FindStoreFormField" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/header -->
+            <div id="content">
+              <!-- Location Selection page -->
+              <div class="left-col">
+                <h2 style="color:#fff;">ORDER YOUR MEAL</h2>
+                <div class="left-inner">
+
+                  <img src="images/top-inner-cap-left.gif" id="top-inner-left" alt="" />
+
+                  <!--                    <a href="" >View All Menu At Once</a>-->
+
+                  <div id="accordion" >
+                    <!--                  <img src="images/icon-pizzas.gif" height="24px" width="24px" id="icon-pizzas"/>
+                                          <span id="p-pizzas">Pizzas</span> <img src="images/arrow-up.gif" height="20px" width="20px" id="arrow-up" /> </div> </a>-->
+
+                    <!-- yi 12/8/10 12:25 AM-->
+                    <h2 class="current">
+                      <img width="24px" height="24px" id="icon-pizzas" src="images/icon-pizzas.gif"/>
+                      Pizza</h2>
+                    <div  class="pane" style="display:block;">
+                      <div id="create-your-own-banner-temp" style="float:left;margin-top:0px;margin-left: 10px;">
+                        <a href="make_your_own.htm"> <img src="images/make_own_pizza1.jpg" width="177" height="175" alt="make your own pizza"/></a>
+                      </div>
+                      <div id="specialty-pizza-slider-temp" style="float:left;margin-top:0px; margin-left: 14px;">
+
+
+                        <!-- scrollable coupon start-->
+                        <!-- "previous page" action -->
+                        <a class="prev browse left"></a>
+                        <div class="scrollable">
+                          <div class="items">
+                            <!-- 1-2-->
+                            <div>
+                              <a href="#"><img src="images/scroll_img1.jpg" width="164" height="167" alt="alt"/></a>
+                              <a href="#"><img src="images/scroll_img2.jpg" width="164" height="167" alt="alt"/></a>
+                            </div>
+                            <!-- 3-4-->
+                            <div>
+                              <a href="#"><img src="images/scroll_img2.jpg" width="164" height="167" alt="alt"/></a>
+                              <a href="#"><img src="images/scroll_img1.jpg" width="164" height="167" alt="alt"/></a>
+                            </div>
+                            <!-- 5-6-->
+                            <div>
+                              <a href="#"><img src="images/scroll_img1.jpg" width="164" height="167" alt="alt"/></a>
+                              <a href="#"><img src="images/scroll_img2.jpg" width="164" height="167" alt="alt"/></a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- "next page" action -->
+                        <a class="next browse right"></a>
+
+                        <!-- scrollable coupon end-->
+                      </div>
+                    </div>
+
+                    <!-- pastas-->
+                    <h2><img width="24px" height="24px" id="icon-sides" src="images/icon-sides.gif"/> Sides</h2>
+                    <div  class="pane">
+                      <!--      <img src="images/icon-pastas.gif" height="24px" width="24px" id="icon-pastas"/> <span id="p-pastas">Pastas</span> <img src="images/arrow-down.gif" height="20px" width="20px" id="arrow-down" /> -->
+                    
+                      <a href="#"> <img src="images/sides_img.jpg" width=" 537" height="190" alt="alt" style="margin-left:15px;"/></a>
+                    </div>
+
+
+                    <h2  ><img width="24px" height="24px" id="icon-drinks" src="images/icon-drinks.gif"/>Drinks</h2>
+                    <div  class="pane">
+                      <a href="#"> <img src="images/drinks_img.jpg" width=" 537" height="190" alt="alt" style="margin-left:15px;"/></a>
+
+                    </div>
+
+                    <h2  ><img width="24px" height="24px" id="icon-pastas" src="images/icon-pastas.gif"/>Pastas</h2>
+                    <div  class="pane">
+                      <a href="#"> <img src="images/sides_img.jpg" width=" 537" height="190" alt="alt" style="margin-left:15px;"/></a>
+                    </div>
+
+                    <h2  ><img width="24px" height="24px" id="icon-sandwiches" src="images/icon-sandwiches.gif"/>Sandwiches</h2>
+                    <div  class="pane"><a href="#"> <img src="images/sides_img.jpg" width=" 537" height="190" alt="alt" style="margin-left:15px;"/></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right-col">
+                <h2>MY ORDER</h2> <img src="images/cart-icon.gif" width="25px" height="25px" class="cart-icon"/>
+                <div class="right-inner">
+
+                  <img src="images/top-inner-cap-right.gif" id="top-inner-right" alt="" />
+                  <P>Add items to the cart.</P>
+                  <img src="images/middle-inner-cap-right.gif" id="middle-inner-right" alt="" />
+                  <h3>HOT DEALS</h3>
+                  <a href="" id="view-all-deals">View All Deals</a>
+                  <div id="coupon1">
+                    <div id="coupon-img1"><a href="coupon1.htm"><img src="images/coupon1.gif" /></a></div>
+                    <div id="coupon-header1"><a href="coupon1.htm">Select</a></div>
+                  </div>
+                  <div id="coupon2">
+                    <div id="coupon-img2"><a href=""><img src="images/coupon2.gif" /></a></div>
+                    <div id="coupon-header2"><a href="">Select</a></div>
+                  </div>
+                  <div id="coupon3">
+                    <div id="coupon-img3"><a href=""><img src="images/coupon3.gif" /></a></div>
+                    <div id="coupon-header3"><a href="">Select</a></div>
+                  </div>
+                  <div id="hotdeals-nav">
+                    <img src="images/dot-arrow-back.gif" height="10px" width="10px" id="dot-arrow-back"/>
+                    <img src="images/dot-active.gif" height="10px" width="10px" id="dot-active"/>
+                    <img src="images/dot-inactive.gif" height="10px" width="10px" id="dot-inactive"/>
+                    <img src="images/dot-inactive.gif" height="10px" width="10px" id="dot-inactive"/>
+                    <img src="images/dot-arrow-forward.gif" height="10px" width="10px" id="dot-arrow-forward"/>
+                  </div></div>
+              </div>
+            </div>
+            <!--/content -->
+            <div style="clear:both;margin-left: 60px; background-image: url(images/bg_footer.jpg); width: 924px; height: 229px;background-repeat: no-repeat;">
+
+              </div>
+          </div>
+          <!--/container -->
+
+        </body>
+        </html>

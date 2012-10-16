@@ -1,0 +1,132 @@
+/*messagebox*/
+.messagebox_info, .messagebox_success, .messagebox_warning, .messagebox_error, .messagebox_validation {
+width:540px;/*width self custom*/
+font-size: .75em;
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.messagebox_info {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('../images/common/messagebox_info.png');
+}
+.messagebox_warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('../images/common/messagebox_warning.png');
+}
+.messagebox_success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../images/common/messagebox_success.png');
+}
+.messagebox_error {/*process unsuccessful*/
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('../images/common/messagebox_error.png');
+}
+.messagebox_validation {
+color: #D63301;
+background-color: #FFCCBA;
+background-image: url('../images/common/messagebox_validation.png');
+}
+
+/*form align 3 option ID*/
+form#form_left_align label{text-align: left;}
+form#form_right_align label{text-align: right;}
+form#form_top_align label{display: block;}
+
+/*form style basic */
+form.basic fieldset{
+  width: 600px;
+  margin-bottom: 10px;
+}
+form.basic legend {
+  font-size: .8em;
+  font-weight:bold;
+  padding-bottom:0;
+  padding-left:2px;
+  padding-right:2px;
+  padding-top:0;
+}
+form.basic label {
+  width: 120px;/*label width*/
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: top;
+}
+form.basic fieldset ol {
+  margin-bottom:0;
+  margin-left:0;
+  margin-right:0;
+  margin-top:0;
+  padding-bottom:0;
+  padding-left:0;
+  padding-right:0;
+  padding-top:0;
+}
+form.basic fieldset li {
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin-bottom:0;
+  margin-left:0;
+  margin-right:0;
+  margin-top:0;
+  padding-bottom:5px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:5px;
+}
+form.basic em{
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+form.basic fieldset.submit{border-style: none;background-image: none;}
+form.basic input.text{}
+form.basic input.short{width: 150px;}/*long input type*/
+form.basic input.long{width:300px;}
+/*form style basic end*/
+
+/*form style gradual start*/
+form.gradual {
+  width:600px;/*form width*/
+  color:#333333;
+}
+form.gradual legend {
+  padding-left:0;
+}
+form.gradual legend, form.gradual label {
+  color:#333333;
+}
+form.gradual fieldset {
+  background-attachment:scroll;
+  background-color:transparent;
+  background-image:url("../images/common/fieldset_gradual_bk_gray.gif");/*custom color*/
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  border-style: none;
+  border-top-color:#aaa;/*gray-#aaa;green-#C9DCA6;*/
+  border-top-style:solid;
+  border-top-width:1px;
+}
+form.gradual fieldset li {
+  background-attachment:scroll;
+  background-color:transparent;
+  background-image:url("../images/common/fieldset-gradual_divider_gray.gif");
+  background-position:left bottom;
+  background-repeat:repeat-x;
+  padding-bottom:7px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+}
+form.gradual fieldset.submit{border-style: none;background-image: none;}
+/*form style gradual end*/
+
+/*form input error*/
+.error_input{background-color: #FFCCBA;}

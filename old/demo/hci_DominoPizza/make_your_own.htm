@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Domino's Pizza</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/960/reset.css" />
+    <link rel="stylesheet" href="css/960/960.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />   
+    <link rel="stylesheet" href="css/ui.spinner.css" />
+    <link rel="stylesheet" href="css/make_pizza.css" />
+
+    <!--[if lt IE 8]>
+     <script src="js/IE8.js" type="text/javascript"></script>
+     <![endif]-->
+    <!--The script only fixes images named: *-trans.png -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-min.js"></script>
+    <script type="text/javascript" src="js/ui.spinner.js"></script>    
+    <script type="text/javascript" src="js/domino_pizza.js"></script>
+  </head>
+
+  <body>
+    <div id="make_pizza"  >
+      <div id="header" class="grid_12">        
+        <!--header navigation -->
+      </div>
+      <div class="clear"></div>
+      <a href="home.htm">
+      <img src="images/blank.png" style='margin-top:50px; margin-left:140px;' />
+      </a>
+
+      <div id="order_flow" class="grid_12">        
+        <!--order flow -->
+      </div>
+      <div class="clear"></div>
+
+      <!-- pizza main part 12/6/10 11:03 PM-->
+      <form id="frm_makepizza" name="frm_makepizza" action="#" method="post">
+
+        <div id="left_part" class="div_inline">
+          <!--start@ size -->
+          <div id="size" class="pizza_element" >
+            <h3>Size</h3>
+            <ol>
+              <li>
+                <input type="radio" id="rdo_size_small" name="rdo_size" value="rdo_size_small"/>
+                <label for="rdo_size_small">Small <span>10</span></label>
+              </li>
+              <li>
+                <input type="radio" id="rdo_size_medium" name="rdo_size" value="rdo_size_medium"/>
+                <label for="rdo_size_medium">Medium <span>12</span></label>
+              </li>
+
+              <li>
+                <input type="radio" id="rdo_size_large" name="rdo_size" value="rdo_size_large"/>
+                <label for="rdo_size_large">Large <span>14</span></label>
+              </li>
+              <li>
+                <input type="radio" id="rdo_size_xlarge" name="rdo_size" value="rdo_size_xlarge"/>
+                <label for="rdo_size_xlarge">X-Large <span>16</span></label>
+              </li>
+            </ol>
+          </div>
+          <!-- end @ size -->
+
+          <!-- start @ crusts -->
+          <div id="crusts" class="pizza_element" >
+            <h3>Crusts</h3>
+            <ol>
+              <li>
+                <input type="radio" id="rdo_crusts_small" name="rdo_crusts" value="rdo_crusts_small"/>
+                <label for="rdo_crusts_small">Hand Tosted </label>
+              </li>
+              <li>
+                <input type="radio" id="rdo_crusts_medium" name="rdo_crusts" value="rdo_crusts_medium"/>
+                <label for="rdo_crusts_medium">Crunchy Thin </label>
+              </li>
+
+              <li>
+                <input type="radio" id="rdo_crusts_large" name="rdo_crusts" value="rdo_crusts_large"/>
+                <label for="rdo_crusts_large">Ultimate Deep</label>
+              </li>
+              <li>
+                <input type="radio" id="rdo_crusts_xlarge" name="rdo_crusts" value="rdo_crusts_xlarge"/>
+                <label for="rdo_crusts_xlarge">Brooklyn Style</label>
+              </li>
+            </ol>
+          </div>
+          <!-- end @crusts-->
+
+          <!-- start@ sauce-->
+          <div id="sauce_cheese" class="pizza_element">
+            <h3>Sauce</h3>
+            <ol>
+              <li>
+                <label for="rdo_r_sauce_whole">Regular</label>
+                <input type="radio" id="rdo_r_sauce_none"  name="rdo_r_sauce" value="none" />
+                <input type="radio" id="rdo_r_sauce_whole" name="rdo_r_sauce" value="whole" />
+                <input type="radio" id="rdo_r_sauce_left"  name="rdo_r_sauce" value="left" />
+                <input type="radio" id="rdo_r_sauce_right" name="rdo_r_sauce" value="right" />
+              </li>
+              <li>
+                <label for="rdo_e_sauce_whole">Extra</label>
+                <input type="radio" id="rdo_e_sauce_none"  name="rdo_e_sauce" value="none" />
+                <input type="radio" id="rdo_e_sauce_whole" name="rdo_e_sauce" value="whole" />
+                <input type="radio" id="rdo_e_sauce_left"  name="rdo_e_sauce" value="left" />
+                <input type="radio" id="rdo_e_sauce_right" name="rdo_e_sauce" value="right" />
+              </li>
+            </ol>
+          </div>
+          <!-- end@ sauce -->
+        </div>
+
+        <div id="middle_part" class="div_inline">
+          <div class="pizza_outer">
+            <div class="pizza_topping1">
+              <div class="pizza_topping2">
+                <img class="img_pizza_topping" src="images/overlay-empty-trans.png" width="159" height="154"/>
+              </div>
+            </div>
+          </div>
+
+          <!--ingredients-->
+          <div  class="pizza_ingredients_outer">
+            <!-- spinner start 12/7/10 11:48 AM-->
+            <p><label for="spinner_q">Quantity</label>
+              <input type="text" id="spinner_q" value="1" style="width: 50px;" />
+            </p>
+            <!--  spinner end-->
+            <h3>Your Pizza Ingredients:</h3>
+            <div class="pizza_ingredients">
+              <ul>
+                <li><span id="ingredient_size">Medium</span> | <span id="ingredient_crust">Hand Tosted</span> | <span id="ingredient_sauce">Regular Sauce</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="right_part" class="div_inline">
+          <!-- topping meat start-->
+          <div id="topping_meat" class="pizza_element" >
+            <h3>Topping(Meat)</h3>
+            <ol>
+              <li>
+                <label for="rdo_topping_m_pep_whole">Pepperoni</label>
+                <input type="radio" id="rdo_topping_m_pep_none" name="rdo_topping_m_pep" value="none" />
+                <input type="radio" id="rdo_topping_m_pep_whole" name="rdo_topping_m_pep" value="whole" />
+                <input type="radio" id="rdo_topping_m_pep_left" name="rdo_topping_m_pep" value="left" />
+                <input type="radio" id="rdo_topping_m_pep_right" name="rdo_topping_m_pep" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_m_ham_whole">Ham</label>
+                <input type="radio" id="rdo_topping_m_ham_none" name="rdo_topping_m_ham" value="none" />
+                <input type="radio" id="rdo_topping_m_ham_whole" name="rdo_topping_m_ham" value="whole" />
+                <input type="radio" id="rdo_topping_m_ham_left" name="rdo_topping_m_ham" value="left" />
+                <input type="radio" id="rdo_topping_m_ham_right" name="rdo_topping_m_ham" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_m_beef_whole">Beef</label>
+                <input type="radio" id="rdo_topping_m_beef_none" name="rdo_topping_m_beef" value="none" />
+                <input type="radio" id="rdo_topping_m_beef_whole" name="rdo_topping_m_beef" value="whole" />
+                <input type="radio" id="rdo_topping_m_beef_left" name="rdo_topping_m_beef" value="left" />
+                <input type="radio" id="rdo_topping_m_beef_right" name="rdo_topping_m_beef" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_m_pork_whole">Pork</label>
+                <input type="radio" id="rdo_topping_m_pork_none" name="rdo_topping_m_pork" value="none" />
+                <input type="radio" id="rdo_topping_m_pork_whole" name="rdo_topping_m_pork" value="whole" />
+                <input type="radio" id="rdo_topping_m_pork_left" name="rdo_topping_m_pork" value="left" />
+                <input type="radio" id="rdo_topping_m_pork_right" name="rdo_topping_m_pork" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_m_sausage_whole">Sausage</label>
+                <input type="radio" id="rdo_topping_m_sausage_none" name="rdo_topping_m_sausage" value="none" />
+                <input type="radio" id="rdo_topping_m_sausage_whole" name="rdo_topping_m_sausage" value="whole" />
+                <input type="radio" id="rdo_topping_m_sausage_left" name="rdo_topping_m_sausage" value="left" />
+                <input type="radio" id="rdo_topping_m_sausage_right" name="rdo_topping_m_sausage" value="right" />
+              </li>
+            </ol>
+          </div>
+          <!-- topping meat end-->
+
+          <!-- topping veggies-->
+          <div id="topping_veggies"  class="pizza_element">
+            <h3>Topping(Veggie)</h3>
+            <ol>
+              <li>
+                <label for="rdo_topping_v_mush_whole">Mushroom</label>
+                <input type="radio" id="rdo_topping_v_mush_none" name="rdo_topping_v_mush" value="none" />
+                <input type="radio" id="rdo_topping_v_mush_whole" name="rdo_topping_v_mush" value="whole" />
+                <input type="radio" id="rdo_topping_v_mush_left" name="rdo_topping_v_mush" value="left" />
+                <input type="radio" id="rdo_topping_v_mush_right" name="rdo_topping_v_mush" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_v_pine_whole">Pineapple</label>
+                <input type="radio" id="rdo_topping_v_pine_none" name="rdo_topping_v_pine" value="none" />
+                <input type="radio" id="rdo_topping_v_pine_whole" name="rdo_topping_v_pine" value="whole" />
+                <input type="radio" id="rdo_topping_v_pine_left" name="rdo_topping_v_pine" value="left" />
+                <input type="radio" id="rdo_topping_v_pine_right" name="rdo_topping_v_pine" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_v_pepper_whole">Gree Peppers</label>
+                <input type="radio" id="rdo_topping_v_pepper_none" name="rdo_topping_v_pepper" value="none" />
+                <input type="radio" id="rdo_topping_v_pepper_whole" name="rdo_topping_v_pepper" value="whole" />
+                <input type="radio" id="rdo_topping_v_pepper_left" name="rdo_topping_v_pepper" value="left" />
+                <input type="radio" id="rdo_topping_v_pepper_right" name="rdo_topping_v_pepper" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_v_onion_whole">Onions</label>
+                <input type="radio" id="rdo_topping_v_onion_none" name="rdo_topping_v_onion" value="none" />
+                <input type="radio" id="rdo_topping_v_onion_whole" name="rdo_topping_v_onion" value="whole" />
+                <input type="radio" id="rdo_topping_v_onion_left" name="rdo_topping_v_onion" value="left" />
+                <input type="radio" id="rdo_topping_v_onion_right" name="rdo_topping_v_onion" value="right" />
+              </li>
+              <li>
+                <label for="rdo_topping_v_olive_whole">Olives</label>
+                <input type="radio" id="rdo_topping_v_olive_none" name="rdo_topping_v_olive" value="none" />
+                <input type="radio" id="rdo_topping_v_olive_whole" name="rdo_topping_v_olive" value="whole" />
+                <input type="radio" id="rdo_topping_v_olive_left" name="rdo_topping_v_olive" value="left" />
+                <input type="radio" id="rdo_topping_v_olive_right" name="rdo_topping_v_olive" value="right" />
+              </li>
+            </ol>
+          </div>
+          <!-- topping veggies end -->
+        </div>
+
+        <div id="order_detail" class="div_inline">
+          <div class="pizza_module">
+            <div class="pizza_module_header">
+            </div>
+            <div class="pizza_module_content">
+              <ul>
+                <li>
+                  Medium Crust Pizza  <span>$9.99</span>
+                </li>
+              </ul>
+            </div>
+            <div class="add_more">
+              <img src="images/add_more.jpg" width="208" height="122" alt=""/>
+            </div>
+            <div class="pay">
+              <span>Tax:</span> <span id="tax"></span>
+            </div>
+            <div id="total" class="pay">
+              <span>Total:</span> <span id="total_price"></span>
+            </div>
+
+            <div id="checkout">
+              <a href="payment.htm"><img src="images/btn_checkout.jpg" width="201" height="36" alt="check out"/></a>
+            </div>
+          </div>
+
+          <div id="hot_deals">
+            <img src="images/bg_hotdeals.jpg" width="223" height="187" alt="hot deals"/>
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+  </body>
+</html>

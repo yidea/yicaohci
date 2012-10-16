@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><?= $html_title; ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="<?= base_url() ?>images/favicon.ico" type="image/x-icon" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/playground/common.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/960/reset.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/960/text.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/960/960.css" />  
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script typpe="text/javascript">
+      $(document).ready(function(){
+
+      });      
+    </script>
+    <style type="text/css">
+      div.content_main table caption{text-align: left; font-weight: bold;font-size: 18px;}
+      div.content_main table{width: 100%; border-collapse: collapse;}
+      div.content_main table td{padding:0 10px 0 10px; border:1px solid #000;}
+      input#txtipt2,textarea#id{border:1px solid; border-color: #666 #ccc #ccc #666;}
+      input#txtipt_font{font:1em Helvetica,sans-serif;color:#333;}
+      input#txtipt_bg:focus, textarea#txtipt_bg:focus { background: yellow;}
+      p#inline{border:1px dotted red;}
+      p#inline span{padding:5px;background-color: #ccc}
+      .access_aid{position: absolute; height: 0;overflow: hidden;}
+      #height_overflow{border:1px solid red;width:500px;height:60px; overflow: auto;}
+    </style>
+  </head>
+
+  <body class="bg_white">
+    <div class="container_12  bg_greylight">
+
+      <!--header -->
+      <div id="header" class="grid_12" >
+        <h1>Logo-Header: grid_12</h1>
+      </div>
+      <div class="clear"></div>
+
+      <!--navbar-->
+      <div id="navbar" class="grid_12 m_bottom_10px bg_green">
+        <ul>
+          <li><a href="#htmlcode">Standard HTML code</a></li>
+          <li>Topics</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+
+      <!--banner -->
+      <div id="banner_left" class="grid_12 bg_grey m_bottom_10px " >
+        <div id="banner_left_inner" class="bg_white ">
+          <h2>Web Standard HTML basic rules</h2>
+          <ul>
+            <li><strong>Web Standard core</strong> - separation of Content and Presentation :1 HTML as structure of content; 2 CSS as presentation </li>
+            <li>All tags must close with /&gt; or &lt;/tag&gt;, all attributes must be in quotation"" marks, tags and attribute must be lowercase &lt;html&gt;</li>
+            <li><strong>Display of elements:</strong> are 1 of 2 types: Block and Inline. You can define a box using css "display:block/inline"
+              <br/><strong>1 Block:</strong>div,h1,p,table,form,fieldset,ul lists ;<br/>
+              <strong>2 Inline:</strong>a,span,img,elements in form,strong,em</li>
+            <li><strong>Box Model:</strong>
+              MBPC(margin, border, padding, width/height of content), IE5's box model(width=content+padding+border) <br/>
+              <img width="432" height="197" alt="box model" src="<?php echo base_url(); ?>images/playground/box_model.jpg" />
+              <br/>
+              1 Vertical Margin Collapsing(only larger margin remain)
+              <br/>
+              2 Block boxes will behave as you might expect with padding, border, and margin applied;
+              <br/>Inline boxes, however, will ignore vertical margins and the padding and border will spill over the line
+              <p id="inline">
+                this <span>inline</span> item has <span>padding:5px</span>
+              </p>
+            </li>
+            <li>
+              <strong>Content Width,Height & Overflow:</strong> when you set the width and height of a box, if the content in the box exceed the dimension of the box, you can set the overflow -decide how to deal with the exceeding part(hidden,scroll,auto)
+              <br/>
+              height:60px; overflow: auto;border:1px solid red;width:500px;
+              <p id="height_overflow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet elit felis. Sed at diam quis ante pretium lacinia. Phasellus et quam in nulla consequat venenatis ac eget metus. Phasellus et quam in nulla consequat venenatis ac eget metus. Phasellus et quam in nulla consequat venenatis ac eget metus.
+              </p>
+              <p>
+                <strong>hide element but accessible by screen reader:</strong> display:none & visibility:hidden both hide elements and not accessible from screen reader
+                <br/>
+                <a class="access_aid" href="#htmlcode" >skip Navigation</a>
+                (a skip navigation is hidden here) .access_aid{position: absolute; height: 0;overflow: hidden;}
+              </p>
+            </li>
+
+            <li>
+              <strong>Positioning elements & Z-index(1):</strong> position: static,relative, absolute, fixed(not supported in IE6)
+              <br/>
+              <p style="position:relative;">
+                It is a long established fact that  <span style="position:relative;left:2em; top:1em; background-color: yellow;">relative :{position:relative;left:1em; top:1em;}</span>a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.
+                <span style="position:absolute;left:1em;top:2.5em;background-color:yellowgreen;">absolute (in relative box):{position:absolute;left:1em;top:2.5em}</span>               
+              </p>
+            </li>
+
+            <li>
+              <strong>Floating & Clear:</strong> float :left,right;  clear:left,right,both;
+              <p>
+                <img style="float:left;margin-right: 10px;" alt="float_left" width="50" height="50" src="<?php echo base_url(); ?>images/facebook.png"/><span class="bg_yellow">img:{float:left;margin-right: 10px;}</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet elit felis. Sed at diam quis ante pretium lacinia. Phasellus et quam in nulla consequat venenatis ac eget metus. Phasellus et quam in nulla consequat venenatis ac eget metus. Phasellus et quam in nulla consequat venenatis ac eget metus.
+                <br/><span class="bg_yellow" style="clear:both">footer:{clear:both}</span>
+              </p>
+            </li>
+
+            <li>
+              <strong>Layout: Fixed ,Liquid or Elastic</strong>
+              <p>
+                Fixed Layout: Good(easy to design); Bad(unable to accommodate to screen size)
+                <br/>
+                Liquid Layout: Good(accommodate to screen size); Bad(might be uncomfortable to read, hard to design)
+                <br/>
+                Elastic Layout: Good(increase proportion as well as text size,comfortable to read); Bad(need set largest text-size;hard to design)
+              </p>
+
+            </li>
+
+
+            <li><strong>Tables</strong> are not for layout but for displaying data</li>
+          </ul>
+
+          <h2>Web Standard CSS basic rules</h2>
+          <ul>
+            <li>
+              <strong>CSS Specificity Calculation:</strong> a(#id),b(#class),c(#htmlTag); Example: #contentNav table(1,0,1) div p.tree(0,1,2)
+            </li>
+            <li>
+              <strong>Inheritance:</strong> descendants inherit style(font,color) from ancestors, but margin,padding,border,width will not be inherited
+            </li>
+            <li>
+              <strong>Absolute,Relative units:</strong> Relative(em,%),Absolute(px,pt)
+            </li>
+            <li>
+              <strong>Three Style Sheets:</strong> Browser< Website < User defined (by priority)
+            </li>
+            <li>
+              <strong>Import Multiple Style Sheets:</strong> @import url(“/css/core.css”);
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <!--spacer -->
+      <div class="grid_12 spacer"></div>
+      <div class="clear"></div>
+
+      <!--content main -->
+      <div class="grid_12 content_main" >
+        <a name="htmlcode"></a>
+
+        <!--htmlcode table -->
+        <table id="htmlcode">
+          <caption>HTML</caption>
+          <tbody>
+            <tr>
+              <td>HTML Document</td>
+              <td>
+                &lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”&gt;<br />
+                &lt;html xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en”&gt;
+              </td>
+            </tr>
+
+            <tr>
+              <td>HTML Head</td>
+              <td>
+                &lt;head&gt;<br />
+                &lt;title&gt;Page title&lt;/title&gt;<br />
+                &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;<br/>
+                &lt;meta name=”keywords” content=”fruit, banana, orange, apple,
+                kumquat, cucumber” /&gt;<br />
+                &lt;meta name=”description” content=”News, reviews and opinion on all
+                things fruity.” /&gt;<br />
+                &lt;meta name=”author” content=”Yi Cao” /&gt;<br />
+                &lt;link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /&gt;<br />
+                &lt;link rel=”stylesheet” type=”text/css” media="all" href=”styles.css” /&gt;<br />
+                &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"&gt;&lt;/script&gt;<br />
+                &lt;/head&gt;
+              </td>
+            </tr>
+
+            <tr>
+              <td>h1-h6</td>
+              <td>use heading in order(start with h1 for page heading, then h2 for subheading, and so on)
+                <h1>Chapter 1 &lt;h1&gt;</h1>
+                <h2>1.1 Content &lt;h2&gt;</h2>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Paragraphs & Line Break & Lipsum Generator</td>
+              <td>
+                &lt;p&gt;Greetings one and all.&lt;br /&gt;Welcome to the world of line breaks.&lt;/p&gt;
+                <br/>
+                <a href="http://www.lipsum.com/">Lipsum Generator</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Other text elements: Quotation(blockquote,q,cite) & Abbreviation(acronym,abbr)
+              </td>
+              <td>
+                <blockquote style="font-style: italic;">
+                  "&lt;blockquote&gt; blockquote is designed to be for large, stand-alone quotations,
+                  whereas q (quote) is used for smaller inline quotes."
+                </blockquote>
+                <p>                
+                  Scientists at <acronym title="National Aeronautics and Space Administration">NASA</acronym> were attempting to teach Jiminy
+                  the locust <abbr title="HyperText Markup Language">HTML</abbr>.
+                  <br/>
+                  &lt;acronym title="National Aeronautics and Space Administration"&gt;NASA&lt;/acronym&gt;
+                  <br/>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Display Word doc content/HTML source code in a web page</td>
+              <td>
+                Certain characters need conversion
+                <form id="form" name="form" action="#">
+                  <textarea id="htmlSource" name="htmlSource" rows="5" cols="84">input original words here..</textarea>
+                  <br/>
+                  <input type="button" id="btn_convert" name="btn_convert" value="Convert" onclick="s=form.htmlSource.value; s=s.replace(/&amp;/g,'&amp;amp;');s=s.replace(/&lt;/g,'&amp;lt;');s=s.replace(/&gt;/g,'&amp;gt;');s=s.replace(/\n/g,'&lt;br /&gt;\n');s=s.replace(/\r/g,'');form.htmloutput.value = s; return false;" />
+                  <br/>
+                  <textarea id="htmloutput" name="htmloutput" rows="5" cols="84">words after conversion..</textarea>
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Jump inside a page</td>
+              <td>
+                &lt;a href="#C4"&gt;See also Chapter 4.&lt;/a&gt;<br />
+                &lt;a name="C4"&gt;spot&lt;/a&gt;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Form & 3 types of Form elements(input,textarea,select)</td>
+              <td>
+                <form id="form2" name="form2" action=”#” method=”post”>
+                  <strong>Form:</strong> &lt;form id="form2" name="form2" action=”#” method=”post”&gt;<br/>
+                  <strong>Fieldset-legend-label structure:</strong><br/>
+                  <fieldset>
+                    <legend>User Profile</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"/>
+                  </fieldset>
+                  &lt;fieldset&gt;<br />
+                  &lt;legend&gt;User Profile&lt;/legend&gt;<br />
+                  &lt;label for="username"&gt;Username:&lt;/label&gt;<br />
+                  &lt;input type="text" id="username" name="username"/&gt;<br />
+                  &lt;/fieldset&gt;
+                  <br/>
+
+                  <strong>Input:</strong>
+                  <ul>
+                    <li>
+                      <input type="text" id="txtinput1" name="txtinput1" maxlength="8" value="12"/>
+                      <label for="txtinput1">&lt;input type="text" id="txtinput1" name="txtinput1" maxlength="8" value="12"/&gt;</label>
+                    </li>
+                    <li>
+                      <input type="password" id="pwinput1" name="pwinput1" maxlength="12" value="123"/>
+                      <label for="pwinput1">&lt;input type="password" id="pwinput1" name="pwinput1" maxlength="12" value="123"/&gt;</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="ckb1" name="ckb1" checked="checked"/>
+                      <label for="ckb1">&lt;input type="checkbox" id="ckb1" name="ckb1" checked="checked"/&gt;</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="ipt_radio1" value="red"/>red
+                      <br/>
+                      <input type="radio" name="ipt_radio1" value="yellow"/>yellow
+                      <br/>
+                      <input type="radio" id="ipt_radio1" name="ipt_radio1" value="blue" checked="checked"/>blue - &lt;input type="radio" id="ipt_radio1" name="ipt_radio1" value="blue" checked="checked"/&gt;
+                    </li>
+                    <li>
+                      <input type="submit" id="ipt_btn1" name="ipt_btn1" value="Search"/> &lt;input type="submit" id="ipt_btn1" name="ipt_btn1" value="Search"/&gt;
+                    </li>
+                    <li>
+                      <input type="reset" id="ipt_reset" name="ipt_reset" value="Reset"/> &lt;input type="reset" id="ipt_reset" name="ipt_reset" value="Reset"/&gt;
+                    </li>
+                    <li>
+                      <input type="hidden" name='customerid' value='sk49fjp923j9fj9393'/> &lt;input type=”hidden” name=”customerid” value=”sk49fjp923j9fj9393” /&gt;
+                    </li>
+                    <li>
+                      <input type="image" id="ipt_img" name='ipt_img' height="30px" weight="100px" src="<?= base_url(); ?>images/twitter.png" alt="image_text"/> &lt;input type="image" id="ipt_img" name='ipt_img' height="30px" weight="100px" src="images/twitter.png" alt="image_text"/&gt;
+                    </li>
+                    <li>
+                      <input type="file" id="uploadfile" name="uploadfile" />
+                      &lt;input type="file" id="uploadfile" name="uploadfile" /&gt;<br />
+                      remember when use a type="file" input elements,you need add enctype="multipart/form-data" to &lt;form&gt; tag
+                    </li>
+                    <li>
+                      <input type="button" id="ipt_btn" name="ipt_btn" value="Login"/> &lt;input type="button" id="ipt_btn" name="ipt_btn" value="Login"/&gt;
+                    </li>
+                  </ul>
+
+                  <strong>Textarea:</strong> &lt;textarea id="ta1" name="ta1" rows="5" cols="50"&gt;content... &lt;/textarea&gt;<br/>
+                  <textarea id="ta1" name="ta1" rows="5" cols="50">content... </textarea> <br/>
+
+                  <strong>Select:</strong><br/>
+                  <select id="slt_book" name=”slt_book”>
+                    <option selected="selected">select one from below</option>
+                    <optgroup label=”Camus”>
+                      <option>The Outsider</option>
+                      <option>The Rebel</option>
+                      <option>The Plague</option>
+                    </optgroup>
+                    <optgroup label=”Orwell”>
+                      <option>Animal Farm</option>
+                      <option>Nineteen Eighty-Four</option>
+                      <option>Down and Out in Paris and London</option>
+                    </optgroup>
+                  </select>
+                  <br/>
+                  &lt;select id="slt_book" name=”slt_book”&gt;<br />
+                  &lt;option selected="selected"&gt;select one from below&lt;/option&gt;<br />
+                  &lt;optgroup label=”Camus”&gt;<br />
+                  &lt;option&gt;The Outsider&lt;/option&gt;<br />
+                  &lt;option&gt;The Rebel&lt;/option&gt;<br />
+                  &lt;option&gt;The Plague&lt;/option&gt;<br />
+                  &lt;/optgroup&gt;<br />
+                  &lt;optgroup label=”Orwell”&gt;<br />
+                  &lt;option&gt;Animal Farm&lt;/option&gt;<br />
+                  &lt;option&gt;Nineteen Eighty-Four&lt;/option&gt;<br />
+                  &lt;option&gt;Down and Out in Paris and London&lt;/option&gt;<br />
+                  &lt;/optgroup&gt;<br />
+                  &lt;/select&gt;
+
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Table</td>
+              <td>
+                &lt;table summary=”A brief overview of animals belonging to certain taxonomic groups”&gt;<br />
+                &lt;caption&gt;Animal groups&lt;/caption&gt;<br />
+                &lt;tbody&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;th colspan=”2” id=”carnivores”&gt;Carnivores&lt;/th&gt;<br />
+                &lt;th id=”primates”&gt;Primates&lt;/th&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;th id=”cats” headers=”carnivores”&gt;Cats&lt;/th&gt;<br />
+                &lt;th id=”dogs” headers=”carnivores”&gt;Dogs&lt;/th&gt;<br />
+                &lt;th id=”lemurs” headers=”primates”&gt;Lemurs&lt;/th&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td headers=”carnivores cats”&gt;Tiger&lt;/td&gt;<br />
+                &lt;td headers=”carnivores dogs”&gt;Grey Wolf&lt;/td&gt;<br />
+                &lt;td headers=”primates lemurs”&gt;Indri&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;/tbody&gt;<br />
+                &lt;/table&gt;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--end htmlcode table -->
+
+        <!--css Style table -->
+        <table id="cssStyle">
+          <caption>CSSstyle</caption>
+          <tbody>
+            <tr>
+              <td>
+                Fonts
+              </td>
+              <td>
+                <p style="font-family:arial,Helvetica,sans-serif;font-size:1em;color:#333;line-height:1.5;font-weight:bold;font-style:italic;text-transform:uppercase;"> "test fonts on here" Another property rooted in traditional print styling that doesn’t translate quite
+as well on a web page (because it’s not really a convention on the Web) is text-indent, the first line of text in a box by a length or percentage.
+                </p>
+                
+                full{font-family:arial,Helvetica,sans-serif;font-size:1em;color:#333;line-height:1.5;font-weight:bold;font-style:italic;text-transform:uppercase;}
+                shorthand{font:1em/1.5 arial,Helvetica,sans-serif;}
+              </td>
+            </tr>
+
+            <tr>
+              <td>Styling Form</td>
+              <td>
+                <ul>
+                  <li><strong>Fonts:</strong> As default, textarea has a Courier font and input has a sans-serif font. The input, textarea and select elements will not inherit any font properties from ancestor.
+                    <br/>
+                    <input type="text" id="txtipt3" name="txtipt3" value="Sans-serif"/>
+                    <input type="text" id="txtipt_font" name="txtipt_font" value="Helvetica"/>
+                    input,textarea{font:1em Helvetica,sans-serif;color:#333;}
+                  </li>
+
+                  <li>
+                    <strong>Border:</strong> (most browser won't apply CSS border to Select elements)
+                    <br/>
+                    <input type="text" id="txtipt2" name="txtipt2"/>
+                    input,textarea{border:1px solid; border-color: #666 #ccc #ccc #666;}
+                  </li>
+
+                  <li>
+                    <strong>Elements background:</strong> We can change the background color of text box and textarea when they are in focus to aid usability,IE6 doesn't support :focus, but we can fixed it with <a href="http://www.htmldog.com/articles/suckerfish/focus">Suckerfish Javascript</a>
+                    <br/>
+                    <input type="text" id="txtipt_bg" name="txtipt_bg"/>
+                    input#txtipt_bg:focus, textarea#txtipt_bg:focus { background: yellow;}
+                    <br/>For checkboxes and radio buttons,many browsers will ignore any background settings-leaving them white.
+                  </li>
+
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Styling Table</td>
+              <td>
+                div.content_main table{width: 100%; border-collapse: collapse;}<br />
+                div.content_main table caption{text-align: left; font-weight: bold;font-size: 18px;}<br />
+                div.content_main table td{padding:0 10px 0 10px; border:1px solid #000;}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--end css Style table -->
+      </div>      
+
+      <!--spacer -->
+      <div class="grid_12 spacer"></div>
+      <div class="clear"></div>
+
+      <!--footer -->
+      <div class="grid_12">
+        <p>footer: grid_4</p>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <!--Back to Home page -->
+    <div class="backHome">
+      <a href="<?php echo base_url(); ?>playground" class="green button float">&lt;&lt; Back to Playground Page</a>
+    </div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18369335-1']);
+  _gaq.push(['_setDomainName', '.yicaohci.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

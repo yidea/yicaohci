@@ -1,0 +1,3420 @@
+@charset "UTF-8";
+/* YUI Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+a {
+  outline: none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* end reset */
+body	{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#535353;
+}
+
+input[type="radio"]  {
+  margin:2px 3px 0 5px;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 1px 2px;
+  background-color: #fff;
+}
+
+input.thin-border {
+  border: 1px inset #F0F0F0;
+  padding: 0px;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+textarea	{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+}
+.error-message {
+	color: red !important;
+}
+.strong {
+  font-weight: bold;
+}
+#logo { z-index:5000; }
+#password-error-message{
+	margin-left:170px !important;
+}
+
+#address-error-message {
+	font-size:12px;
+	font-weight:bold;
+}
+
+.locator-error-message {
+	font-size:12px;
+	font-weight:bold;
+	clear:both;
+	padding: 10px 0 2px 0px !important;
+}
+
+#error-message-area{
+	height:83px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/notification.jpg) top left no-repeat scroll;
+	clear:both;
+	padding: 0 0 5px 0;
+
+}
+#error-text{
+	font-size:14px;
+	color:#fff;
+	padding:25px 25px 0 60px;
+}
+#error-sub-text{
+	font-size:12px;
+	color:#fff;
+	padding:10px 0 0 60px;
+}
+
+input.form-input-error {
+  background-color: #ffcfd7;
+}
+.input-error-text {
+	color:#FF0000;
+	font-weight:bold;
+	margin-left:155px;
+	position:relative;
+}
+#address-entry-form .input-error-text{ margin-left:100px; }
+
+#login-content .input-error-text { color:#FF0000; font-weight:normal !important; font-size:12px !important; margin:0 !important }
+
+.field-note {
+  font-size: 10px;
+  color: #444;
+}
+
+.red-field-note {
+  font-size: 10px;
+  color: #F00;
+}
+
+.clr { display: block; float: none; clear: both; }
+.none { display: none; }
+.fl { display: inline; float: left; }
+.fr { display: inline; float: right; }
+.w100 { width: 100%; position:relative; }
+.bold { font-weight: bold; }
+
+div.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}
+div.clear-med {
+  clear: both;
+  height: 16px;
+  overflow: hidden;
+}
+#wrapper	{
+	width:940px;
+	margin:10px auto;
+}
+#header	{ position: relative; width: 880px; margin: 0 0 0 60px; }
+#header h1	{ position:absolute; top: -5px; left: -53px; z-index:1000; }
+
+#header	.links	{ color:#005094; text-align:right; }
+#header	span.links-divider	{ padding:0 7px 0 7px;color:#999;}
+#header .links a, #header .links a:link, #header .links a:visited	{ color:#005094; text-decoration:none; }
+#header .links a:hover { text-decoration:underline; }
+
+#nav { margin: 0 0 0 53px; }
+#nav ul { width: 100%; height: 37px; overflow: hidden; }
+#nav ul li { height: 100%; text-indent:-9999px; float: left; }
+#nav ul li.clr { float: none; height: 0; width: 0; overflow: hidden;   }
+
+/* Home Page Header */
+#nav #navigation-main { /*margin:0 0 0 45px; padding:0; width:749px;*/ height: 20px; margin: 10px 0; }
+#nav #navigation-main li { /*margin-right:38px;*/ margin: 0 20px; }
+#nav #navigation-main #extra-home{ margin:0; float:right; }
+#nav #navigation-main #extra-home a {background:url(http://cache.dominos.com/express010500/images/site-home/giftcards-sprite-n6.jpg) top left no-repeat; display:block; width:215px; }
+#nav #navigation-main #extra-home a:hover { background-position:0 -25px; }
+
+#nav ul li#order-home{ background:url(http://cache.dominos.com/express010500/images/site-home/order-online.gif) top left no-repeat; width:50px; height:20px;}
+#nav ul li#menu-home{ background:url(http://cache.dominos.com/express010500/images/site-home/see-menu.gif) top left no-repeat; width:42px;  height:20px;}
+#nav ul li#coupons-home{ background:url(http://cache.dominos.com/express010500/images/site-home/coupons.gif) top left no-repeat; width:68px; height:20px; }
+#nav ul li#locations-home{ background:url(http://cache.dominos.com/express010500/images/site-home/locations.gif) top left no-repeat; width:81px;  height:20px;}
+#nav ul li#tracker-home{ background:url(http://cache.dominos.com/express010500/images/site-home/tracker.gif) top left no-repeat; width:65px; height:20px; }
+#nav ul li#espanol-home{
+	background:url(http://cache.dominos.com/express010500/images/site-home/espanol.gif) top left no-repeat;
+	width:63px;
+	/*margin-top:-3px;*/
+	height:20px;
+}
+
+#nav ul li#espanol-home:hover {
+	background-position:0 -28px !important;
+}
+
+#nav ul li#order-home:hover,
+#nav ul li#menu-home:hover,
+#nav ul li#coupons-home:hover,
+#nav ul li#locations-home:hover,
+#nav ul li#tracker-home:hover {
+	background-position:0 -24px !important;
+}
+
+#nav ul li a	{ display: block; width: 100%; height: 100%; }
+#nav ul li#olohome	{
+	background:url(../images/home-off.gif) top center no-repeat;
+	width:85px;
+}
+#nav ul li#olohome:hover,
+#nav ul li#olohome.active{
+	background:url(../images/home-on.gif) top center no-repeat;
+}
+#nav ul li#entrees	{
+	background:url(../images/entrees-off.gif) top center no-repeat;
+	width:174px;
+}
+#nav ul li#entrees:hover,
+#nav ul li#entrees.active {
+	background:url(../images/entrees-on.gif) top center no-repeat;
+}
+#nav ul li#sides	{
+	background:url(../images/sides-off.gif) top center no-repeat;
+	width:174px;
+}
+#nav ul li#sides:hover,
+#nav ul li#sides.active {
+	background:url(../images/sides-on.gif) top center no-repeat;
+}
+#nav ul li#coupons	{
+	background:url(../images/coupons-off.gif) top center no-repeat;
+	width:118px;
+}
+#nav ul li#coupons:hover,
+#nav ul li#coupons.active {
+	background:url(../images/coupons-on.gif) top center no-repeat;
+}
+#nav ul li#catering	{
+	background:url(http://cache.dominos.com/express010500/images/nav/catering-off.gif) top center no-repeat;
+	width:110px;
+}
+#nav ul li#catering:hover,
+#nav ul li#catering.active {
+	background:url(http://cache.dominos.com/express010500/images/nav/catering-on.gif) top center no-repeat;
+}
+#nav ul li#espanol	{
+	background:url(http://cache.dominos.com/express010500/images/nav/espanol-off.gif) top center no-repeat;
+	width:102px;
+}
+#nav ul li#espanol:hover,
+#nav ul li#espanol.active {
+	background:url(http://cache.dominos.com/express010500/images/nav/espanol-on.gif) top center no-repeat;
+}
+#nav ul li#order-online  {
+  background:url(http://cache.dominos.com/express010500/images/nav/order-off.gif) top center no-repeat;
+  width:85px;
+}
+#nav ul li#order-online:hover,
+#nav ul li#order-online.active {
+  background:url(http://cache.dominos.com/express010500/images/nav/order-on.gif) top center no-repeat;
+}
+#nav ul li#locations  {
+  background:url(http://cache.dominos.com/express010500/images/nav/locations-off.gif) top center no-repeat;
+  width:119px;
+}
+#nav ul li#locations:hover,
+#nav ul li#locations.active {
+  background:url(http://cache.dominos.com/express010500/images/nav/locations-on.gif) top center no-repeat;
+}
+
+input.FindStoreFormField{border: 1px solid #777;color:#606060;font-size:12px;}
+
+#sub-nav { background: #0065a3 url(http://cache.dominos.com/express010500/images/bkg/bkg-header.gif) top right no-repeat; min-height: 55px; height:auto !important; height: 55px; position:relative; }
+#sub-nav ul	{
+	padding: 16px 0 16px 55px; 
+	overflow: hidden;
+	width:880px;
+}
+#sub-nav ul li	{
+	display: inline;
+	/*margin: 0 20px;*/
+	/*float:left;*/
+	color:#fff;
+	padding:0 16px;
+	/*border-right:1px solid #fff;*/
+	overflow: hidden;
+}
+#sub-nav ul li.FindStoreForm{padding-left:0px;}
+#sub-nav ul li span{padding:0 7px 0 10px;}
+#sub-nav ul li.last	{
+	border-right:none;
+}
+#sub-nav ul li a,
+#sub-nav ul li a:visited	{
+	color:#fff;
+	text-decoration:none;
+	font-size:18px;
+}
+#sub-nav	ul li a:hover,
+#sub-nav	ul li a.active {
+	border-bottom:1px solid #fff;
+	background:none;
+}
+#legal-sub-nav{ display:block !important; }
+#content, #content-waiting	{
+	width:870px;
+	margin-left: 60px;
+	_margin-left: 30px;
+	border-left:5px solid #0065a3;
+	border-right:5px solid #0065a3;
+	float:left;
+	padding:0;
+	overflow: hidden;
+	background-color:#0065a3;
+}
+#content .left-col	{
+	width:620px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	background-color:#0065a3;
+}
+
+#content .right-col	{
+	width:244px;
+margin:0px;
+padding:0px;
+	float:right;
+	background-color:#0065a3;
+}
+.left-inner img#top-inner-left {height:9px; width:620px; margin:0px; padding:0px; vertical-align:top;}
+.right-inner img#top-inner-right {height:9px; width:244px; margin:0px; padding:0px;vertical-align:top;}
+.right-inner img#middle-inner-right {height:23px; width:244px; margin:0px; padding:0px;}
+.left-inner p, .right-inner p{margin-left:10px;}
+.left-inner{background-color:#fff;height:500px;}
+.payment{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/paymentBg.png) no-repeat;
+	widht:620px;
+	height:890px;
+	
+}
+.payment input{
+	height:25px;
+	border:1px solid #999;
+	color:#666;
+	font-size:19px;
+}
+.summary{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/summary.png) no-repeat;
+	width:865px;
+	height:312px;
+	
+}
+.thank{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/thankBg.png) no-repeat;
+	width:865px;
+	height:312px;
+	
+}
+.coupon2{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/coupon2.png) no-repeat;
+	width:867px;
+	height:525px;
+	
+}
+
+.coupon1{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/coupon1.png) no-repeat;
+	width:867px;
+	height:525px;
+	
+}
+.coupon3{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/coupon3.png) no-repeat;
+	width:867px;
+	height:525px;
+	
+}
+.coupon4{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/coupon4.png) no-repeat;
+	width:867px;
+	height:525px;
+	
+}
+.coupon5{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/coupon5.png) no-repeat;
+	width:867px;
+	height:525px;
+	
+}
+.pay{
+	margin-bottom:4px;
+	position:relative;
+	background: url(../images/payBg.png) no-repeat;
+	width:865px;
+	height:375px;
+	margin-bottom:10px;
+	margin-top:10px;
+	
+}
+.pay input{
+	height:25px;
+	border:1px solid #999;
+	color:#666;
+	font-size:19px;
+}
+.right-inner{background-color:#f8f8f8;height:500px;}
+#content .right-col	h2, #content .left-col h2 {color:#fff; font-size:20px;margin:5px 0px 10px 10px;font-weight:bold;padding:5px;}
+#content .full-col	{
+	width:837px;
+	margin-left:10px;
+	display: inline;
+	float:left;
+}
+
+.welcome	{
+	font-size:11px;
+	color:#024269;
+	line-height:15px;
+}
+.welcome span	{
+	font-size:18px;
+	margin-right:10px;
+}
+.item	{
+	display:none;
+	width: 100%;
+	margin-bottom:7px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-item.jpg) top left no-repeat;
+}
+
+.item .graphic	{
+	width:140px;
+	height:72px;
+	padding-left:1px;
+	float:left;
+}
+.item .desc	{
+	width: 450px;
+	margin: 15px 0 0 10px;
+	color:#535353;
+	font-size:12px;
+	float:left;
+}
+.item .desc h2	{
+	font-size:24px;
+	color:#0065a3;
+}
+.item.flyout	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-inactive-item.jpg) top left no-repeat;
+}
+.item.hover	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-hover-item.jpg) top left no-repeat;
+  cursor:pointer;
+}
+.item.flyout-hover	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-flyout-hover.jpg) top left no-repeat;
+  cursor:pointer;
+}
+.item.active  {
+  background:url(http://cache.dominos.com/express010500/images/bkg/bkg-active-item.jpg) top left no-repeat;
+}
+.item.active .desc h2,
+.item.active .desc,
+.item.hover .desc h2,
+.item.hover .desc,
+.item.flyout-hover .desc h2,
+.item.flyout-hover .desc,
+.item.item-options-hover .desc h2,
+.item.item-options-hover .desc,
+.item.options-active .desc h2,
+.item.options-active .desc {
+	color:#fff;
+}
+.item.item-options-hover	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-hover-item-view-options.jpg) top left no-repeat;
+}
+.item.options-active	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-hover-item-hide-options.jpg) top left no-repeat;
+	height:auto;
+}
+
+.slider	{
+	padding: 40px 25px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-item-flyout.gif) bottom left no-repeat;
+}
+.slider.pop	{
+	padding: 16px 25px;
+	height: 400px;
+}
+.flyout-module	{
+	height: 102px;
+	width: 241px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-flyout-module-wide.gif) top left no-repeat;
+	padding: 14px;
+}
+.flyout-module-pop {
+	height: 200px;
+	width: 555px;
+	background: url(http://cache.dominos.com/express010500/images/bkg/bkg-flyout-module-pop-tall.gif) top left no-repeat;
+	padding: 14px;
+}
+.flyout-module-pop2 {
+	min-height: 40px;
+	width: 555px;
+	background: url(http://cache.dominos.com/express010500/images/bkg/bkg-flyout-module-pop-tall2.gif) top left no-repeat;
+	padding: 14px 14px 0px 14px;
+}
+.flyout-module, .flyout-module-pop	{
+	font-size:11px;
+}
+.flyout-module h3, .flyout-module-pop h3	{
+	font-size:14px;
+	color:#0065a3;
+	margin-bottom:4px;
+	font-weight: bold;
+}
+.flyout-module p, .flyout-module-pop p	{
+	margin:14px 0 4px 0;
+}
+
+#pastPopContainer {
+	overflow:auto;
+	height:auto;
+}
+.pastPopSlot {
+	display:block;
+	padding-top:3px;
+	padding-bottom:3px;
+	width:250px;
+	vertical-align:middle;
+}
+.pastPopBottom {
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-flyout-module-pop-tall2.gif) no-repeat scroll left bottom transparent;
+	height:20px;
+	position:relative;
+	left:-14px;
+	bottom:-5px;
+
+}
+
+.coupon-code-error{
+	color:#F00;
+	font-size:10px;
+}
+div.coupon-details input {
+  color:#5f5f5f;
+  font-weight:bold;
+  margin-top:4px;
+}
+.error-code{
+	font-weight:bold;
+}
+#find-a-coupon{
+	background:url(http://cache.dominos.com/express010500/images/buttons/find-a-coupon.jpg) top left no-repeat;
+	height:32px;
+	width:111px;
+	text-indent:-9999px;
+	display:block;
+	margin-top:6px;
+}
+#find-a-coupon:hover{
+	background-position:0 -32px;
+}
+#use-a-coupon{
+	background:url(http://cache.dominos.com/express010500/images/buttons/use-coupon.jpg) top left no-repeat;
+	height:32px;
+	width:111px;
+	text-indent:-9999px;
+	display:block;
+	margin-top:6px;
+	border: 0px;
+	cursor: pointer;
+}
+#use-a-coupon:hover{
+	background-position:0 -32px;
+}
+#enter-coupon-code{	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-hover-item.jpg) bottom left scroll no-repeat; height:72px; }
+#enter-coupon-code p, #enter-coupon-code a{
+	color:#FFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:10px;
+	text-decoration:none;
+}
+#coupon-fieldset{ padding-top:25px; position:relative; left:100px }
+#enter-coupon-code p{ font-size:16px; display:inline-block;	margin:15px; float:left; }
+
+.btn-enter-coupon-code {
+  background:url("http://cache.dominos.com/express010500/images/buttons/use-code.jpg") no-repeat scroll left top transparent;
+  width:101px;
+  height:32px;
+  margin:10px 0 16px;
+  text-indent: -9999px;
+  overflow: hidden;
+  font-size: 0;
+  display: block;
+  line-height: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-enter-coupon-code:hover {
+  background-position: 0 -32px;
+}
+
+.left10	{
+	margin-left:10px;
+}
+.top10	{
+	margin-top:10px;
+}
+#btm-cap	{
+	margin-left:60px;
+}
+.right-col .mod	{
+	width:235px;
+	height:auto;
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-right-module.gif) bottom left no-repeat;
+	margin-bottom:10px;
+	float:left;
+}
+.right-col .mod h2	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-right-module-top-cap.png) top left no-repeat;
+	padding:5px 10px;
+}
+.right-col .mod p	{
+	padding:12px 12px 20px;
+}
+.right-col .mod .error-message {
+  margin:12px 12px;
+}
+.right-col .mod .location p  {
+  clear:both;
+  padding:12px 0;
+  line-height:15px;
+}
+
+.profile-links	{ padding: 10px; }
+.profile-links a.link	{ background:url(http://cache.dominos.com/express010500/images/bkg/bkg-profile-link.gif) top right no-repeat; padding-right:10px; margin-right:10px; }
+.profile-links a.link.right	{	text-align:right; }
+.profile-links a, .profile-links a:visited, .profile-links a:link	{ font-size:10px; font-weight: bold; text-decoration:none; color:#005094; }
+.profile-links a:hover	{	text-decoration:underline; }
+
+.right-col .location  { margin:0 12px; padding: 12px 0; font-size:12px; }
+.right-col #summary-loc {	border-top:1px solid #98bacf; }
+.right-col .location h3 a { text-decoration: underline; margin-left: 5px; font-size:11px; color:#005094; }
+.right-col .location h3, h3.other-pop-items	{ color:#fa001f; font-weight:bold; font-size:14px; }
+.right-col .location ul { margin: 5px 0 0 0; }
+.right-col .location li { margin: 2px 0 0 0; width: 100%; }
+.right-col .location li.button { margin-top: 10px; }
+.right-col .location .delivery-type { margin-top: 5px; }
+.right-col .location .delivery-type span { display: block; }
+
+
+/* Text Offers */
+.right-col .text-offer { margin:0 12px; padding: 10px 0; border-bottom:1px solid #98bacf; }
+#text-offers { font-size:12px; font-weight:bold; }
+#text-offers a { text-decoration:none; }
+#text-offers a:hover { text-decoration:underline; }
+#text-offers .text-offer-disclaimer { font-size:8px; }
+#text-offers .last-offer {border:none; }
+
+h3.other-pop-items { padding-top:10px; padding-left:20px; width:250px; }
+
+.change-link	{
+	float:left;
+	margin-left:6px;
+}
+.change-link a,
+.change-link a:link,
+.change-link a:hover,
+.change-link a:visited	{
+	font-size:10px;
+	color:#21547b;
+	text-decoration:underline;
+	font-weight:bold;
+}
+.location input	{
+	margin-bottom:5px;
+	margin-right:4px;
+}
+.location label	{
+	font-size:11px;
+	font-weight:bold;
+	color: #727272;
+}
+.location label .nofee	{
+	font-size:9px;
+	font-style:italic;
+}
+.location label .nofee a,
+.location label .nofee a:visited	{
+	text-decoration:underline;
+	color:#005094;
+	font-style:normal;
+}
+.pizza-points	{
+	font-size:9px;
+}
+.see-whats-new	{
+	position:relative;
+	top:64px;
+	left:15px;
+}
+.see-whats-new a	{
+	width:113px;
+	height:22px;
+	background:url(http://cache.dominos.com/express010500/images/buttons/see-whats-new.png) top left no-repeat;
+	text-indent:-9999px;
+	display:block;
+}
+.see-whats-new a:hover	{
+	background-position:0 -22px;
+	cursor:pointer;
+}
+.order-now	{
+	position:relative;
+	top:130px;
+	left:160px;
+	width:131px;
+}
+.order-now a	{
+	width:131px;
+	height:42px;
+	background:url(http://cache.dominos.com/express010500/images/buttons/order-now.png) top left no-repeat;
+	text-indent:-9999px;
+	display:block;
+}
+.order-now a:hover	{
+	background-position:0 -42px;
+	cursor:pointer;
+}
+/* notifications and future order*/
+.notification > *	{ width:607px; height:83px; background:url(http://cache.dominos.com/express010500/images/bkg/notification.jpg) top left no-repeat; margin:0 0 10px 0; }
+.notification .copy { color:#FFFFFF; float:left; font-size:13px; font-weight:bold; margin-left:55px; margin-top:15px; text-transform:uppercase; width:420px; }
+.notification .subcopy { font-size:12px; font-weight:normal; text-transform:none; }
+.notification .wide  { width:520px; }
+
+.notification .small, .notification a.small, .notification a.small:link, .notification a.small:hover, .notification a.small:visited { color:#FFFFFF; font-size:10px; font-weight:normal; text-transform:none; }
+.notification .lowbar { padding: 10px 5px 5px 5px; }
+.notification .lowbar li { font-size:12px; text-transform:none; display:inline; }
+.notification .lowbar li a.new-store { background:url("http://cache.dominos.com/express010500/images/icons/find-new-store.gif") no-repeat scroll left top transparent; padding-left:15px; }
+.notification li a.new-location { background:url("http://cache.dominos.com/express010500/images/icons/choose-new-location.gif") no-repeat scroll left top transparent; padding-left:25px; }
+.notification .lowbar li a.future-order { background:url("http://cache.dominos.com/express010500/images/icons/make-future-order.gif") no-repeat scroll left top transparent; padding-left:15px; margin-left:25px; }
+.notification .lowbar li a { color:#FFFFFF; }
+/*.notification .lowbar li a, .notification .lowbar li a:visited { background:url("http://cache.dominos.com/express010500/images/icons/notice-arrow.gif") no-repeat scroll right 2px transparent; color:#FFFFFF; padding-right:15px; text-decoration:none; }*/
+
+.notification .close, .notification .close .notext { width:30px; }
+.notification .close { float:right; padding-top:10px; width:30px; }
+.notification .close a, .notification .close a:visited { background:url("http://cache.dominos.com/express010500/images/icons/close-notice.gif") no-repeat scroll right top transparent; color:#FFFFFF; font-size:12px; padding-right:15px; text-decoration:none; }
+.notification .dateInput { display:block; float:left; margin-right:5px; width:75px; }
+.notification .ui-datepicker-trigger { position: relative; margin-top: -4px; }
+.notification .lowbar .textSubmit { background:url("http://cache.dominos.com/express010500/images/icons/notice-arrow.gif") no-repeat scroll right 4px transparent; font-size:16px; font-weight:bold; text-transform:uppercase; padding-right:15px; }
+.notification .lowbar .restrictions { margin-left: none; }
+
+.time-chooser li { display:block; float:left; font-size:12px; margin-right:18px; text-transform:none; }
+#co-order-timing .time-chooser { padding: 0px 0px 20px 20px; }
+.futureorder-msg { padding-bottom: 5px; }
+#future-order-date-co { top:-5px; position:relative; }
+	
+/* legacy notifications */
+#notification	{
+	width:607px;
+	height:83px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/notification.jpg) top left no-repeat;
+	margin-bottom:10px;
+	float:left;
+}
+#coupon-complete-notification	{
+	width:607px;
+	height:73px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-coupon-complete.jpg) top left no-repeat;
+	margin-bottom:10px;
+	float:left;
+}
+.notice-copy	{
+	width:420px;
+	float:left;
+	padding-top:15px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase;
+	margin-left:55px;
+}
+.notice-copy.wide	{
+	width:520px;
+}
+.notice-sub-copy {
+	font-size:12px;
+	font-weight:normal;
+	text-transform:none;
+}
+.notice-restrictions	{
+	width:90px;
+	float:right;
+	clear:right;
+	white-space:nowrap;
+	margin-top:30px;
+}
+.small-notice-comment	{
+	font-size:11px;
+	font-style:italic;
+	font-weight:normal;
+	text-transform:none;
+}
+#coupon-complete-notification	.notice-copy	{
+	margin-left:70px;
+}
+.notice-cta li	{
+	display:block;
+	float:left;
+	font-size:13px;
+	text-transform:none;
+	margin-left:35px;
+	margin-top:10px;
+}
+.notice-cta li a,
+.notice-cta li a:visited {
+	text-decoration:none;
+	color:#fff;
+	padding-right:15px;
+	background:url(http://cache.dominos.com/express010500/images/icons/notice-arrow.gif) right 2px no-repeat;
+}
+.notice-cta li a:hover	{
+	text-decoration:underline;
+}
+.notice-cta li.first	{
+	margin-left:0;
+}
+.notice-cta li.first.form img	{
+	margin-top:-4px;
+}
+.notice-cta .text-submit	{
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding-right:15px;
+	background:url(http://cache.dominos.com/express010500/images/icons/notice-arrow.gif) right 4px no-repeat;
+}
+.small-notice,
+a.small-notice,
+a:link.small-notice,
+a:hover.small-notice,
+a:visited.small-notice	{
+	font-size:10px;
+	text-transform:none;
+	font-weight:normal;
+	color:#fff;
+}
+#close-notice	{
+	width:130px;
+	float:right;
+	padding-top:10px;
+}
+#coupon-complete-notification #close-notice,
+#close-notice.no-text	{
+	width:30px;
+}
+#close-notice a,
+#close-notice a:visited	{
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	padding-right:15px;
+	background:url(http://cache.dominos.com/express010500/images/icons/close-notice.gif) right top no-repeat;
+}
+#close-notice a:hover	{
+	text-decoration:underline;
+}
+#close-notice.no-text a:hover	{
+	text-decoration:none;
+}
+#coupon-complete-notification #close-notice a:hover	{
+	text-decoration:none;
+}
+#date-input	{
+	width:75px;
+	margin-right:5px;
+	display:block;
+	float:left;
+}
+.notice-cta li a.find-new-store	{
+	padding-left:15px;
+	background:url(http://cache.dominos.com/express010500/images/icons/find-new-store.gif) left top no-repeat;
+}
+.notice-cta li a.choose-new-location	{
+	padding-left:25px;
+	background:url(http://cache.dominos.com/express010500/images/icons/choose-new-location.gif) left top no-repeat;
+}
+.notice-cta li a.make-future-order	{
+	padding-left:15px;
+	background:url(http://cache.dominos.com/express010500/images/icons/make-future-order.gif) left top no-repeat;
+}
+.phone-one-box	{
+	width:85px;
+}
+.phone-ext	{
+	width:40px;
+}
+
+/* right col */
+.my-store-info	{
+	display:block;
+	width:103px;
+	height:22px;
+	background:url(http://cache.dominos.com/express010500/images/buttons/my-store-info.gif) top left no-repeat;
+	text-indent:-9999px;
+}
+.my-store-info:hover	{
+	background-position:0 -22px;
+}
+.hide-my-store	{
+	display:block;
+	width:108px;
+	height:22px;
+	background:url(http://cache.dominos.com/express010500/images/buttons/hide-my-store.gif) top left no-repeat;
+	text-indent:-9999px;
+}
+.hide-my-store:hover	{
+	background-position:0 -22px;
+}
+ul.order-list	{
+	margin:14px 10px 14px;
+}
+ul.order-list li	{
+	border-bottom:1px solid #98BACF;
+	padding-top:10px;
+}
+ul.order-list #order-summary-update-li li	{
+	border-bottom: none !important;
+}
+input.order-amount	{
+	float:left;
+	/*background:url(http://cache.dominos.com/express010500/images/icons/order-amount.gif) top left no-repeat;*/
+	height:14px;
+	width:19px;
+	text-align:center;
+	/*font-size:9px;*/
+	font-size:12px;
+	color:#4f4f4f;
+	margin-right: 4px;
+	padding: 1px 1px 3px 0px;
+	/*border:none;*/
+	border: solid 1px #024269;
+}
+.order-item-block {
+  background: #e6e6e6;
+  font-size:11px;
+}
+.order-item {
+	font-weight:bold;
+	color:#4b4a4a;
+	display:inline-block;
+	margin-bottom:10px;
+	width:187px;
+}
+#order-summary.order-summary-priced .order-item {
+	width:144px;
+}
+.order-item a	{
+	float:left;
+	color:#024269;
+	font-size:9px;
+	text-decoration:underline;
+	font-weight:bold;
+	margin-top:6px;
+}
+.order-item-name  {
+  color: #000;
+}
+.order-item-price {
+  display: none;
+}
+#order-summary.order-summary-priced .order-item-price {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 42px;
+}
+.order-item-options  {
+  font-weight: normal;
+}
+.order-item-options span, #co-coupon-field span {
+  font-weight: bold;
+}
+.change-item	{
+	margin-right:10px;
+}
+#co-add-coupon {
+	border: 0px;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+	color:#003366;
+	font-size:14px;
+	text-decoration:none;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left:5px;
+	font-weight:bold;
+}
+#co-coupon-field {
+	background:#ffffcc;
+	padding:5px;
+}
+h3.selected-coupons	{
+	border-top:1px solid #98BACF;
+	font-size:14px;
+	font-weight:bold;
+	color:#0065a3;
+	margin:10px;
+	padding-top:10px;
+}
+.selected-coupons-alert	{
+	background:#fff;
+	border:3px solid #ff0000;
+	margin:0 8px 16px 6px;
+	padding:6px;
+	float:left;
+}
+.selected-coupons-alert h3	{
+	font-size:24px;
+	font-weight:bold;
+	color:#024269;
+	background:url(http://cache.dominos.com/express010500/images/icons/coupons-alert.gif) right 6px no-repeat;
+}
+.selected-coupons-alert p	{
+	font-weight:bold;
+	color:#4b4a4a;
+	padding:12px 0 !important;
+}
+.selected-coupons-complete	{
+	background:#fff;
+	border:1px solid #bcbcbc;
+	margin:0 8px 16px 6px;
+	padding:6px;
+	float:left;
+}
+.selected-coupons-complete h3	{
+	font-size:18px;
+	font-weight:bold;
+	color:#4b4a4a;
+	background:url(http://cache.dominos.com/express010500/images/icons/coupons-check.gif) right 4px no-repeat;
+}
+.selected-coupons-complete p	{
+	font-weight:bold;
+	color:#4b4a4a;
+	padding:12px 0 !important;
+	font-size:11px;
+}
+.selected-coupons-complete img	{
+	float:left;
+	margin-right:5px;
+}
+#order-summary-update-li {
+  height: 15px;
+}
+#order-summary-link-update-qty {
+	float:left;
+}
+#order-summary-link-price-order	{
+	float: left;
+	margin-left: 26px;
+}
+#order-summary.order-summary-pricing #order-summary-link-price-order, #order-summary.order-summary-priced #order-summary-link-price-order{
+  display: none;
+}
+#order-summary-subtotal {
+	display: none;
+}
+#order-summary-subtotal-li {
+  height: 0px;
+  display: none;
+}
+#order-summary.order-summary-pricing #order-summary-subtotal, #order-summary.order-summary-priced #order-summary-subtotal {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+#order-summary.order-summary-pricing #order-summary-subtotal-li, #order-summary.order-summary-priced #order-summary-subtotal-li {
+  height: 16px;
+  display: block;
+}
+#order-summary-checkout {
+  display:block;
+  height:42px;
+  width:167px;
+  background:url(http://cache.dominos.com/express010500/images/buttons/checkout.jpg) top left no-repeat;
+  text-indent:-9999px;
+  margin: 0 auto;
+}
+#order-summary-checkout:hover {
+  background-position:0px -42px;
+}
+/*
+coupon section of my order box
+*************************************************/
+#order-summary-coupon-list{
+	margin-top:10px;
+}
+#order-summary-coupon-list #selected-coupons{
+	border-top:1px solid #98BACF;
+	color:#21547b;
+	font-size:12px;
+	font-weight:bold;
+	margin:0 10px 10px;
+	padding-top:10px;
+}
+.coupon-box-complete{
+	background:#FFFFFF none repeat scroll 0 0;
+	border: 1px solid #BCBCBC;
+	float:none;
+	margin:0 8px 8px 6px;
+	overflow:auto;
+	padding:6px;
+}
+.coupon-box-alert{
+	background:#FFFFFF none repeat scroll 0 0;
+	border: 3px solid #FF0000;
+	float:none;
+	margin:0 8px 8px 6px;
+	overflow:auto;
+	padding:6px;
+}
+.coupon-box-complete h3{
+	background:transparent url(http://cache.dominos.com/express010500/images/icons/coupons-check.gif) no-repeat scroll right 4px;
+	color:#4B4A4A;
+	font-size:18px;
+	font-weight:bold;
+    height: 22px;
+}
+.coupon-box-alert h3{
+	background:transparent url(http://cache.dominos.com/express010500/images/icons/coupons-alert.gif) no-repeat scroll right 4px;
+	color:#4B4A4A;
+	font-size:18px;
+	font-weight:bold;
+    height: 22px;
+}
+#order-summary-coupon-list .coupon-box-complete p, #order-summary-coupon-list .coupon-box-alert p {
+	color:#4B4A4A;
+	font-size:11px;
+	font-weight:bold;
+	padding: 12px 0;
+}
+#order-summary-coupon-list .coupon-box-complete p, #order-summary-coupon-list .coupon-box-alert p.limited {
+    font-weight:normal;
+    padding: 0 0 12px 0;
+}
+.coupon-box-complete a, .coupon-box-alert a{
+	color:#024269;
+	font-size:9px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.coupon-box .remove-link { float: right; }
+
+.learn-more-link { }
+
+#coupon-no-codes h3{
+	color:#21547b;
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:10px;
+}
+#order-summary-premium-note {
+	color:#535353;
+	font-size:10px;
+}
+#order-summary-premium-note div.premium-asterisk {
+	float:left;
+	margin-left:8px;
+	width:6px;
+}
+#order-summary-premium-note div.premium-text {
+	float:left;
+	margin-left:2px;
+	padding-bottom:8px;
+	width:210px;
+}
+
+/************************************************/
+.selected-coupons-alert a,
+.selected-coupons-alert a:link,
+.selected-coupons-alert a:hover,
+.selected-coupons-alert a:visited,
+.selected-coupons-complete a,
+.selected-coupons-complete a:link,
+.selected-coupons-complete a:hover,
+.selected-coupons-complete a:visited	{
+	color:#024269;
+	font-size:9px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.bug	{
+	font-weight:bold;
+	font-size:11px;
+}
+.right-col .mod p.bug	{
+	padding-bottom:0px;
+}
+.bug a,
+.bug a:link,
+.bug a:hover,
+.bug a:visited	{
+	color:#535353;
+	text-decoration:underline;
+}
+a.cufoned, a.pure-cufoned {
+	text-transform:uppercase;
+	color:#21547b;
+	font-size:14px;
+	text-decoration:none;
+}
+a.cufoned:hover, a.pure-cufoned:hover {
+	text-decoration:underline;
+}
+.no-border	{
+	border:none !important;
+}
+/* item grids */
+
+/* NONE OF THIS IS USED ATM, BUT SHOULD KEEP IT AROUND UNTIL FINAL CSS IS IMPLEMENTED FOR SIDES
+.items-grid .welcome	{
+	width:100%;
+	float:left;
+}
+.items-grid .item	{
+	width:300px;
+	float:left;
+	background:none;
+	height:150px;
+	margin-bottom:35px;
+}
+.items-grid .item .graphic	{
+	width:90px;
+}
+.items-grid .item .desc	{
+	width:190px;
+	padding:0px 10px 0 0;
+	font-size:11px;
+}
+.items-grid .item .desc h2	{
+	font-size:14px;
+}
+.items-grid .item form div	{
+	display:block;
+	margin: 8px 0;
+}
+.items-grid .item label	{
+	display:inline-block;
+	width:35px;
+	font-weight:bold;
+	font-size:11px;
+	color:#a1a1a1;
+}
+.items-grid .item .order-amount	{
+	float:none;
+}
+.items-grid a.add-grid-item-to-order	{
+	display:block;
+	width:134px;
+	height:32px;
+	background:url(http://cache.dominos.com/express010500/images/buttons/btn-add-to-order-1.jpg) top left no-repeat;
+	text-indent:-9999px;
+}
+.items-grid a.add-grid-item-to-order:hover	{
+	background-position: 0px -32px;
+}*/
+
+/* overlays */
+.overlay {
+
+    /* must be initially hidden */
+    display:none;
+
+    /* place overlay on top of other elements */
+    z-index:10000;
+
+    /* styling */
+    background-color:#333;
+
+    width:636px;
+    height:476px;
+    border:1px solid #666;
+
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+/* fonts */
+.font11	{
+	font-size:11px;
+}
+.light-weight	{
+	font-weight:normal;
+}
+.no-bg	{
+	background:none !important;
+}
+.checkbox	{
+	margin:0 5px;
+}
+.fine-print	{
+	-x-system-font:none;
+	border-top:1px solid #C2CED3;
+	clear:left;
+	font-family:arial,geneva,helvetica,sans-serif;
+	font-size:9px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	height:25px;
+	left:237px;
+	line-height:normal;
+	padding-top:4px;
+	width:415px;
+	margin-top:10px;
+}
+
+/* builder */
+.builder-left	{
+	width:415px;
+	float:left;
+	clear:both;
+	margin-top:10px;
+}
+#content-flash-piece {
+	text-align: center;
+	position: relative;
+	clear: left;
+	height: 500px;
+}
+#builder-add-to-order-big {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 5px;
+  text-align:center;
+}
+#builder-add-to-order-big a {
+  display:block;
+  text-indent:-9999px;
+  margin: 0 auto;
+}
+#builder-add-to-order-big .builder-add-to-order-lg {
+  background: url(http://cache.dominos.com/express010500/images/builder/btn-add-to-order-large.gif) no-repeat;
+  width:184px;
+  height:56px;
+}
+#builder-add-to-order-big .builder-save-changes-lg {
+  background: url(http://cache.dominos.com/express010500/images/builder/btn-save-changes-large.gif) no-repeat;
+  width:187px;
+  height:56px;
+}
+#builder-add-to-order-big a:hover {
+  background-position: left bottom;
+}
+.builder-qty	{
+	text-align:right;
+}
+.builder-qty .order-amount	{
+	float:none;
+	margin-left:8px;
+}
+.builder-right	{
+	margin:0 12px;
+	width:165px;
+	float:left;
+	font-size:10px;
+	color:#0078ae;
+}
+.builder-right input {
+  margin: 3px;
+  width: 13px;
+  height: 13px;
+}
+.builder-right ul	{
+	margin:10px 0;
+}
+
+#content-choose-crust {
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #c2ced3;
+}
+
+#content-choose-crust-light {
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+#content-choose-crust h3#crust-size {
+  width: 164px;
+  margin: 0px 0 2px 0;
+  padding: 0px 0 2px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  background: transparent url(http://cache.dominos.com/express010500/images/builder/h4-size-and-crust.png) no-repeat;
+  height: 25px;
+}
+#content-choose-crust h3#crust-size-selected {
+  width: 164px;
+  margin: 0px 0 2px 0;
+  padding: 0px 0 2px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  background: transparent url(http://cache.dominos.com/express010500/images/builder/h4-change-size-and-crust.png) no-repeat;
+  height: 25px;
+}
+
+#content-choose-crust-light h3#crust-size-light {
+  width: 164px;
+  margin: 0 0 2px 0;
+  padding: 1px 0 0px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  background: url(http://cache.dominos.com/express010500/images/builder/h4-size-and-crust-light.png) no-repeat 0 0;
+  height: 25px;
+}
+#content-choose-crust-light h3#crust-size-light-selected {
+  width: 164px;
+  margin: 0 0 2px 0;
+  padding: 1px 0 0px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  background: url(http://cache.dominos.com/express010500/images/builder/h4-change-size-and-crust-light.png) no-repeat 0 0;
+  height: 25px;
+}
+
+#content-choose-crust-light div#builder-crust-size {
+	color:#024269;
+	font-size:11px;
+	font-weight:bold;
+	margin:0 0 5px;
+	padding:0 0 0 10px;
+}
+
+.content-choose-specialty-light h3.specialty-light {
+  width: 164px;
+  margin: 0 0 2px 0;
+  padding: 1px 0 0px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  background: url(http://cache.dominos.com/express010500/images/builder/h4-selected-specialty-light.png) no-repeat 0 0;
+  height: 25px;
+}
+
+.content-choose-specialty-light div.builder-specialty {
+	color:#024269;
+	font-size:11px;
+	font-weight:bold;
+	margin:0 0 5px;
+	padding:0 0 0 10px;
+}
+
+#content-choose-toppings {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0078ae;
+  font-size: 10px;
+}
+
+#content-choose-toppings .topping-section {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c2ced3;
+}
+
+#content-choose-toppings p {
+  margin: 5px 0 5px 0;
+}
+
+#content-choose-toppings .builder-topping-side {
+  float: left;
+  overflow:visible;
+}
+
+#content-choose-toppings select {
+  font-size: 10px;
+  float: right;
+  margin-right: 2px;
+}
+
+#content-choose-toppings h4 {
+  width: 164px;
+  height: 10px;
+  margin: 0 0 5px 0;
+  text-indent: -9000em;
+}
+
+#content-choose-toppings h3#choose-toppings {
+  background: url(http://cache.dominos.com/express010500/images/builder/h4-toppings.png) no-repeat 0 0;
+  width: 164px;
+  margin: 0 0 2px 0;
+  padding: 1px 0 2px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  height: 25px;
+}
+#content-choose-toppings h3#choose-toppings-selected {
+  background: url(http://cache.dominos.com/express010500/images/builder/h4-change-toppings.png) no-repeat 0 0;
+  width: 164px;
+  margin: 0 0 2px 0;
+  padding: 1px 0 2px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height:1;
+  height: 25px;
+}
+
+#content-choose-toppings h4#h4-cheese-and-sauce {
+  background: url(http://cache.dominos.com/express010500/images/builder/h5-cheese-and-sauce.png) no-repeat 0 0;
+  }
+#content-choose-toppings h4#h4-meats {
+  background: url(http://cache.dominos.com/express010500/images/builder/h5-meats.png) no-repeat 0 0;
+  margin-top: 5px;
+}
+#content-choose-toppings h4#h4-unmeats {
+  background: url(http://cache.dominos.com/express010500/images/builder/h5-unmeats.png) no-repeat 0 0;
+  margin-top: 5px;
+}
+
+div.builder-option-side div {
+  float: left;
+  height: 15px;
+  margin: 2px;
+  width: 15px;
+}
+div.builder-option-side a {
+  display: block;
+  float: left;
+  height: 15px;
+  text-indent: -9999px;
+  width: 15px;
+}
+#content-choose-toppings .option-section select {
+  float: right;
+}
+#content-choose-toppings .topping-radios {
+	margin-left: 12px;
+}
+div.builder-option-side div, div.builder-topping-side div a {
+  overflow: visible;
+  position: relative;
+}
+div.builder-option-side div.option-side-whole {
+	width: 15px;
+	height: 15px;
+  background: url(http://cache.dominos.com/express010500/images/builder/icon-whole-pizza.png) no-repeat;
+}
+div.builder-option-side div.option-side-left {
+  background: url(http://cache.dominos.com/express010500/images/builder/icon-left-pizza.png) no-repeat;
+}
+div.builder-option-side div.option-side-right {
+  background: url(http://cache.dominos.com/express010500/images/builder/icon-right-pizza.png) no-repeat;
+}
+div.builder-option-side div.option-side-whole.selected {
+  background: url(http://cache.dominos.com/express010500/images/builder/icon-whole-pizza-selected.png) no-repeat;
+}
+div.builder-option-side div.option-side-left.selected {
+  background: url(http://cache.dominos.com/express010500/images/builder/icon-left-pizza-selected.png) no-repeat
+}
+div.builder-option-side div.option-side-right.selected {
+  background: url(http://cache.dominos.com/express010500/images/builder/icon-right-pizza-selected.png) no-repeat;
+}
+div.builder-option-side div.option-side .topping-hover {
+  text-indent: 0;
+  text-align: center;
+  top: -40px;
+  left: -60px;
+  position: absolute;
+  width: 131px;
+  height: 38px;
+  padding: 0;
+  color: #fff;
+  z-index: 2000;
+  cursor: pointer;
+}
+div.builder-option-side div.option-side-whole .topping-hover {
+    background: url(http://cache.dominos.com/express010500/images/builder/vb-hover-wholepizza.png) no-repeat bottom;
+}
+div.builder-option-side div.option-side-left .topping-hover {
+    background: url(http://cache.dominos.com/express010500/images/builder/vb-hover-lefthalfonly.png) no-repeat bottom;
+}
+div.builder-option-side div.option-side-right .topping-hover {
+    background: url(http://cache.dominos.com/express010500/images/builder/vb-hover-righthalfonly.png) no-repeat bottom;
+}
+
+#crust-accordion .ui-accordion-header h4 span {
+  color: #0078AE;
+  cursor: pointer;
+  display: block;
+  height: 47px;
+  padding: 5px 0 0 70px;
+  text-align: left;
+  width: 94px;
+  text-indent: -9999px;
+}
+
+#crust-accordion .ui-widget-content,
+#crust-accordion .ui-state-active,
+#crust-accordion .ui-state-default,
+#crust-accordion .ui-state-hover,
+#crust-accordion .ui-widget-content .ui-state-active,
+#crust-accordion .ui-widget-content .ui-state-default {
+		border: 0px;
+		background: white;
+}
+
+#crust-accordion .ui-accordion-content {
+	padding: 0px;
+}
+
+#crust-accordion .crust-options li,
+#crust-accordion .crust-options p {
+	padding: 0px;
+	color:#0078AE;
+	font-size:10px;
+}
+
+.crust-options {
+  display: block;
+  overflow: hidden;
+  /*height: 97px;*/
+   height: auto;
+  margin-bottom: 10px;
+}
+.crust-options li label {
+	cursor: pointer;
+}
+
+#builder-crust-section {
+	float:right;
+	width:164px;
+}
+
+#builder-topping-section {
+	float:right;
+	width:164px;
+}
+
+#builder-topping-section a.backtocrust {
+  display: block;
+  height:29px;
+  width:55px;
+  background: url(http://cache.dominos.com/express010500/images/buttons/btn-back.png) no-repeat;
+  text-indent:-9999px;
+}
+* HTML #builder-topping-section a.backtocrust {background: url(http://cache.dominos.com/express010500/images/buttons/btn-back.gif) no-repeat;}
+#builder-topping-section a.builderaddtoorder {
+  display: block;
+  width: 104px;
+  height: 29px;
+  background: url(http://cache.dominos.com/express010500/images/builder/btn-popup-add-to-order.png) no-repeat;
+  text-indent:-9999px;
+}
+* HTML #builder-topping-section a.builderaddtoorder {background: url(http://cache.dominos.com/express010500/images/builder/btn-popup-add-to-order.gif) no-repeat;}
+#builder-topping-section a.buildersavechanges {
+  display: block;
+  width: 104px;
+  height: 29px;
+  background: url(http://cache.dominos.com/express010500/images/builder/btn-save-changes.png) no-repeat;
+  text-indent:-9999px;
+}
+* HTML #builder-topping-section a.buildersavechanges {background: url(http://cache.dominos.com/express010500/images/builder/btn-save-changes.gif) no-repeat;}
+li {margin:0px; padding:0px;}
+#builder-topping-section a:hover {
+  background-position:   bottom left;
+}
+
+div.crust-divider {
+	line-height:1;
+	padding:0 5px 2px;
+}
+
+#builder-crust-section a.addtoppings {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(http://cache.dominos.com/express010500/images/builder/btn-next.png) no-repeat scroll 0 0;
+	display:block;
+	height:36px;
+	text-indent:-9999px;
+	width:76px;
+}
+* HTML #builder-crust-section a.addtoppings  {background: url(http://cache.dominos.com/express010500/images/builder/btn-next.gif) no-repeat;}
+
+#builder-crust-section  a:hover {
+  background-position:   bottom left;
+}
+
+#builder-crust-section a.changetoppings {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(http://cache.dominos.com/express010500/images/builder/btn-change-toppings.png) no-repeat scroll 0 0;
+	display:block;
+	height:36px;
+	text-indent:-9999px;
+	width:164px;
+}
+* HTML #builder-crust-section a.changetoppings {background: url(http://cache.dominos.com/express010500/images/builder/btn-change-toppings.gif) no-repeat;}
+
+h4#vb-HANDTOSS span   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-hand-tossed.png) no-repeat; }
+h4#vb-HANDTOSS-CLASSIC span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-hand-tossed-classic.png) no-repeat; }
+h4#vb-DEEPDISH  span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-deep-dish.png) no-repeat; }
+h4#vb-BK span { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-brooklyn-style.png) no-repeat; }
+h4#vb-THIN span   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-thin-crust.png) no-repeat; }
+h4#vb-CRISMLT span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-crispy-melt.png) no-repeat; }
+h4#vb-PAN span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-pan.png) no-repeat; }
+h4#vb-GARBRD span   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-french-bread.png) no-repeat; }
+
+h4#vb-HANDTOSS span.selected    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-hand-tossed-sel.png) no-repeat; }
+h4#vb-HANDTOSS-CLASSIC span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-hand-tossed-classic-sel.png) no-repeat; }
+h4#vb-DEEPDISH  span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-deep-dish-sel.png) no-repeat; }
+h4#vb-BK span.selected  { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-brooklyn-style-sel.png) no-repeat; }
+h4#vb-THIN span.selected    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-thin-crust-sel.png) no-repeat; }
+h4#vb-CRISMLT span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-crispy-melt-sel.png) no-repeat; }
+h4#vb-PAN span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-pan-sel.png) no-repeat; }
+h4#vb-GARBRD span.selected    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts/vb-french-bread-sel.png) no-repeat; }
+
+h4#vb-HANDTOSS-ca span   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-hand-tossed.png) no-repeat; }
+h4#vb-HANDTOSS-CLASSIC-ca span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-hand-tossed-classic.png) no-repeat; }
+h4#vb-DEEPDISH-ca  span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-deep-dish.png) no-repeat; }
+h4#vb-BK-ca span { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-brooklyn-style.png) no-repeat; }
+h4#vb-THIN-ca span   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-thin-crust.png) no-repeat; }
+h4#vb-CRISMLT-ca span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-crispy-melt.png) no-repeat; }
+h4#vb-PAN-ca span    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-pan.png) no-repeat; }
+h4#vb-GARBRD-ca span   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-french-bread.png) no-repeat; }
+
+h4#vb-HANDTOSS-ca span.selected    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-hand-tossed-sel.png) no-repeat; }
+h4#vb-HANDTOSS-CLASSIC-ca span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-hand-tossed-classic-sel.png) no-repeat; }
+h4#vb-DEEPDISH-ca  span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-deep-dish-sel.png) no-repeat; }
+h4#vb-BK-ca span.selected  { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-brooklyn-style-sel.png) no-repeat; }
+h4#vb-THIN-ca span.selected    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-thin-crust-sel.png) no-repeat; }
+h4#vb-CRISMLT-ca span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-crispy-melt-sel.png) no-repeat; }
+h4#vb-PAN-ca span.selected   { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-pan-sel.png) no-repeat; }
+h4#vb-GARBRD-ca span.selected    { background: transparent url(http://cache.dominos.com/express010500/images/builder/crusts-ca/vb-french-bread-sel.png) no-repeat; }
+
+input.option-selector, span.option-desc, span.option-desc-radio, div.option-section select, div.option-side {
+  cursor: pointer;
+}
+span.option-desc-radio {
+	margin-left: -2px;
+}
+
+div.builder-option-side {
+  margin: 0px;
+}
+
+/* specialty pizzas */
+.specialty-header, .coupon-header, .generic-header { background:url(http://cache.dominos.com/express010500/images/bkg/hdr-specialty.jpg) top left no-repeat; font-size:16px; color:#fff; text-transform:uppercase; clear:both; padding: 5px 0 6px 10px; }
+.specialty-item	{ width:125px; height:260px; float: left; margin-top:15px; margin-right:35px; position: relative; }
+.specialty-item a { width: 130px; height: 119px; display: block; text-indent: -9999px; position: absolute; z-index: 1000; top: 0; left: 0; line-height: 1; background: transparent url(http://cache.dominos.com/express010500/images/specialty-pizza/menu-item-a.png) no-repeat top left; }
+.specialty-item a:hover { cursor: pointer; background-position: bottom left; }
+.specialty-item.last { margin-right:0; }
+.specialty-item h3	{ font-size:12px; color:#0078ae; font-weight:bold; margin: 10px 8px 0; }
+.specialty-item p { font-size: 10px; margin: 5px 8px 0; }
+.specialty-item {}
+.specialty-item {}
+.specialty-item {}
+
+/* location */
+#location-container	{
+  background:transparent url(http://cache.dominos.com/express010500/images/location/bkg-location-container.jpg) no-repeat scroll left bottom;
+  clear:both;
+  padding:0 3px 15px;
+  margin-left:4px;
+}
+
+#location-container.login	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/login-content.jpg) bottom left no-repeat;
+	margin-left:0px;
+}
+
+#location-container h2	{
+	background:transparent url(http://cache.dominos.com/express010500/images/location/bkg-header.jpg) no-repeat scroll left top;
+  padding-left: 90px;
+  font-size: 24px;
+	color: #0065a3;
+	height: 71px;
+	overflow: hidden;
+	margin-bottom: 8px;
+}
+
+#location-container h2.oneline {
+	padding-top:22px;
+	padding-bottom: 21px;
+	height: auto;
+}
+#location-container div.list-header {
+	font-size:16px;
+	color:#4b4b4b;
+	background:url(http://cache.dominos.com/express010500/images/location/icon-star.jpg) top left no-repeat;
+	line-height:25px;
+	padding-left:28px;
+}
+#location-content	{
+	width:550px;
+	margin:15px 20px;
+	position:relative;
+}
+.service-types-container ul li,
+#address-types-container ul li{
+	display:inline-block;
+	padding:10px 10px 10px 0;
+}
+.service-types-container a,
+#address-types-container a {
+	height:71px;
+	text-indent: -9999px;
+	display:block;
+}
+#address-types-container a {
+	width:63px;
+}
+.service-types-container a {
+	width:58px;
+}
+#address-types-container a	{
+	background:url(http://cache.dominos.com/express010500/images/location/icons-sprite.jpg) top left no-repeat;
+}
+.service-types-container a#delivery	{
+	background:url(http://cache.dominos.com/express010500/images/location/icon-service-options-sprite.jpg) top left no-repeat;
+}
+.service-types-container a#delivery.active	{
+	background:url(http://cache.dominos.com/express010500/images/location/icon-service-options-sprite.jpg) 0 -72px no-repeat;
+}
+.service-types-container a#carryout	{
+	background:url(http://cache.dominos.com/express010500/images/location/icon-service-options-sprite.jpg) -59px 0 no-repeat;
+}
+.service-types-container a#carryout.active	{
+	background:url(http://cache.dominos.com/express010500/images/location/icon-service-options-sprite.jpg) -59px -72px no-repeat;
+}
+.service-types-container a#locations	{
+	background:url(http://cache.dominos.com/express010500/images/location/icon-service-options-sprite.jpg) -118px 0 no-repeat;
+}
+.service-types-container a#locations.active	{
+	background:url(http://cache.dominos.com/express010500/images/location/icon-service-options-sprite.jpg) -118px -72px no-repeat;
+}
+
+#address-types-container a#house	{
+	background-position:0 0;
+}
+#address-types-container a#house.active	{
+	background-position:0 -71px;
+}
+#address-types-container a#apartment	{
+	background-position:-74px 0;
+}
+#address-types-container a#apartment.active	{
+	background-position:-74px -71px;
+}
+#address-types-container a#business	{
+	background-position:-148px 0;
+}
+#address-types-container a#business.active	{
+	background-position:-148px -71px;
+}
+#address-types-container a#campus-base	{
+	background-position:-222px 0;
+}
+#address-types-container a#campus-base.active	{
+	background-position:-222px -71px;
+}
+#address-types-container a#hotel	{
+	background-position:-296px 0;
+}
+#address-types-container a#hotel.active	{
+	background-position:-296px -71px;
+}
+#address-types-container a#dormitory	{
+	background-position:-370px 0;
+}
+#address-types-container a#dormitory.active	{
+	background-position:-370px -71px;
+}
+#address-types-container a#other	{
+	background-position:-446px 0;
+}
+#address-types-container a#other.active	{
+	background-position:-446px -71px;
+}
+
+#address-entry-form { width: auto;  }
+#location-container #state-zip #state, #location-container #state-zip #zip { float:left; }
+#location-container #state-zip #state div, #location-container #state-zip #zip div { display: inline; }
+#location-container form ul li	{ margin:15px 0 0 0; }
+#address-entry-form .form-entry label{ width:90px; }
+#address-entry-form .form-entry #zip-code label{ width:40px; }
+#address-entry-form .form-entry #postal-code label{ width:60px; }
+#location-container form select {
+	margin-right:10px;
+	color:#5f5f5f;
+	font-weight:bold;
+}
+.form-label{ font-size:11px; text-align:right; vertical-align:middle; width:115px; margin-right:0; }
+
+.address-label-short{ text-align:right; width:35px; }
+#location-container .specialty-header	{
+	width:593px;
+	background:url(http://cache.dominos.com/express010500/images/bkg/location-hdr.jpg) top left no-repeat;
+}
+#build-your-order	{ margin: 10px 0 0 95px; cursor: pointer; border: 0; font-size: 0; line-height: 0; text-indent: -9999px; width:173px; height:42px; background:url(http://cache.dominos.com/express010500/images/buttons/btn-continue-red.gif) top left no-repeat; }
+.find-store-button{
+	background:url(http://cache.dominos.com/express010500/images/buttons/find-my-store.png) top left no-repeat !important;
+	display:block;
+	height:40px !important;
+	margin:0 20px 30px 45px;
+	text-indent:-9999px;
+	width:141px !important;
+}
+.find-store-button:hover{
+	background-position:0 -40px !important;
+}
+#build-your-order.hover	{
+	background-position:0 -42px;
+}
+h3.location-links	{
+	font-size:14px;
+	color:#4b4a4a;
+	line-height:20px;
+}
+ul.login li.small	{
+	font-size:10px;
+	font-weight:bold;
+}
+a.login	{
+	width:99px;
+	height:39px;
+	display: block;
+	text-indent: -9999px;
+	margin:15px 0 10px 0;
+	background:url(http://cache.dominos.com/express010500/images/buttons/login.jpg) top left no-repeat;
+}
+a.login:hover	{
+	background-position:0 -39px;
+}
+#login-page .left-col{
+	margin:0 !important;
+}
+h2.cufoned	{
+	font-size:18px;
+	color:#fff;
+}
+h3.cufoned  {
+  color:#0065A3;
+  font-size:14px;
+  margin-bottom:8px;
+  font:16px arial,geneva,helvetica,arial,sans-serif;
+}
+.mod.login-page	{
+	background:url(http://cache.dominos.com/express010500/images/bkg/bkg-login-right-module.jpg) bottom left no-repeat;
+}
+/*.mod.login-page p	{
+	text-align:center;
+	font-weight:bold;
+	padding:12px 0 20px 0 !important;
+}*/
+.mod.login-page p.cufoned	{
+	font-size:16px;
+	color:#4b4b4b;
+}
+/*.mod.login-page a	{
+	width:68px;
+	height:83px;
+	display:inline-block;
+	background:url(http://cache.dominos.com/express010500/images/location/login-location-sprite.jpg) top left no-repeat;
+	text-indent:-9999px;
+	margin:0 20px 30px 45px;
+}*/
+.mod.login-page a.delivery	{
+	background-position:0 0;
+	margin-right:15px;
+}
+.mod.login-page a.delivery:hover	{
+	background-position:0 -83px;
+}
+.mod.login-page a.carryout	{
+	background-position:-97px 0;
+}
+.mod.login-page a.carryout:hover	{
+	background-position:-97px -83px;
+}
+a.view-your-menu	{
+	display:inline-block;
+	width:168px;
+	height:42px;
+	background:url(http://cache.dominos.com/express010500/images/buttons/view-your-menu.jpg) top left no-repeat;
+	text-indent:-9999px;
+	margin:0 0 20px 25px;
+}
+a.view-your-menu:hover	{
+	background-position:0 -42px;
+}
+
+/* PRELOAD IMAGES */
+.hide-img {
+  display: none;
+}
+
+.clearfix {
+  clear:both;
+}
+
+
+/******************************/
+/*** Checkout page section ***/
+/*****************************/
+	div.co-indent {
+		width: 816px;
+		margin: 10px 0 0 15px;
+	}
+	div.prompt {
+		background: #E7F0F7 none repeat scroll 0 0;
+		border: 1px solid #FF0016;
+		color: #333;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: bold;
+		padding: 15px 10px;
+	}
+	.co-subhead {
+		display: block;
+		margin: 16px 0 10px 0;
+	}
+	div.details-indent {
+		margin: 10px 0 0 15px;
+		font-size: 11px;
+		color: #000;
+		width: 100%;
+	}
+	div.co-divider {
+		background-color: #ccc;
+		height: 1px;
+		overflow: hidden;
+		margin: 10px 0;
+	}
+	.reqd-info {
+		color: #f00;
+	}
+	#co-service-methods .co-service-label.selected {
+	  font-weight: bold;
+	}
+	#co-delivery-instructions-section {
+	  margin: 10px;
+	}
+	#co-cooking-instructions-section {
+	  margin: 0 0 0 10px;
+	}
+	.field-note span.field-note-prefix, .red-field-note span.field-note-prefix {
+	  font-weight: bold;
+	}
+	.co-form-label {
+		float: left;
+		display: inline;
+		width: 110px;
+		padding-top: 4px;
+		font-size: 11px;
+		font-weight: bold;
+		color: #000;
+	}
+	#co-delivery-instructions-section .co-form-label, #co-cooking-instructions-section .co-form-label {
+	  float: none;
+	}
+	textarea#co-cooking-instructions {
+		width: 400px;
+		height: 64px
+	}
+	.co-form-error {
+    padding-top: 4px;
+	}
+	div.co-form-input, div.co-form-error {
+		float: left;
+		display: inline;
+		margin-right: 5px;
+	}
+	div.co-form-ext {
+		float: left;
+		display: inline;
+		padding-top: 4px;
+		font-size: 11px;
+		font-weight: bold;
+		color: #000;
+		margin-right: 10px;
+	}
+	div.co-form-ext-disc {
+		float: left;
+		display: inline;
+		width: 250px;
+		margin: -3px 0;
+		line-height: 9px;
+	}
+	.co-form-input input.names {
+		width: 130px;
+	}
+	.co-form-input input.email {
+		width: 224px;
+	}
+	.co-form-clear {
+		clear: both;
+		overflow: hidden;
+		height: 10px;
+	}
+	.co-form-radio-indent {
+		margin: 0 0 8px 110px;
+	}
+	.co-form-radio-indent input {
+	  width: 13px;
+		margin-right: 5px;
+		position: relative;
+	}
+	#co-ordersum-table {
+		border: solid 1px #dedede;
+		margin-top: 10px;
+		font-size: 10px;
+	}
+
+  #co-ordersum-table tr.order-item-block td {
+    border-bottom: solid 1px #dedede;
+  }
+
+  #co-order-update-qty {
+    line-height: 1.5;
+    background-color: #e6e6e6;
+    border-bottom: solid 1px #dedede;
+  }
+
+	.co-quant-head {
+		width: 150px;
+		padding: 4px;
+		background-color: #ccc;
+		text-align: center;
+		font-weight: bold;
+		font-size: 11px;
+	}
+	.co-quant-row {
+		text-align: center;
+	}
+	.co-quant-row .order-amount {
+    float:none;
+	}
+
+	.co-desc-head {
+		width: 433px;
+		padding: 4px;
+		background-color: #ccc;
+		font-weight: bold;
+		font-size: 11px;
+	}
+	.co-desc-row  {
+		padding: 4px;
+	}
+	.co-desc-row div {
+    margin-bottom: 4px;
+	}
+	.co-desc-row strong {
+		font-weight: bold;
+		font-size: 11px;
+	}
+	.co-charges-head {
+		width: 140px;
+		padding: 4px;
+		background-color: #ccc;
+		font-size: 11px;
+	}
+	.co-charges-row {
+		font-size: 11px;
+		font-weight: bold;
+		padding: 4px;
+		text-align: right;
+		border-top: solid 1px #dedede;
+	}
+	.co-amt-head {
+		width: 90px;
+		text-align: center;
+		padding: 4px 10px 4px 0;
+		text-align: right;
+		font-weight: bold;
+		background-color: #ccc;
+		font-size: 11px;
+	}
+	.co-amt-row {
+		width: 88px;
+		padding: 4px 10px 4px 0;
+		vertical-align: top;
+		text-align: right;
+		border-top: solid 1px #dedede;
+	}
+	.co-item-name {
+    font-weight: bold;
+	}
+
+
+#co-place-order {
+  margin-top: 24px;
+  margin-right: -8px;
+  float: right;
+  display: block;
+  text-indent: -9999px;
+  height: 76px;
+  width: 286px;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  background: url(http://cache.dominos.com/express010500/images/buttons/place-order-grey.jpg) top left no-repeat;
+}
+#co-place-order.co-enabled {
+	background: url(http://cache.dominos.com/express010500/images/buttons/place-order.jpg) top left no-repeat;
+  cursor: pointer;
+}
+#co-place-order.co-enabled.hover {
+  background: url(http://cache.dominos.com/express010500/images/buttons/place-order-sm.jpg) top left no-repeat;
+}
+
+/* Coupon Display */
+.coupon-row { background-color: #ffc; }
+.coupon-row .coupon-box { margin: 0; margin: 10px 0; padding: 10px; }
+.coupon-row .coupon-box h3 { display: none; }
+.coupon-row .coupon-box p { padding: 0; font-size: 11px; }
+
+
+/*
+SIDE ITEMS
+--------------------------------------------------------- */
+
+ul.list-sides {
+  margin: 0;
+  padding: 0;
+  /*width: 510px;*/
+  width: 600px;
+  list-style: none;
+}
+ul.list-sides li.side-item {
+  float: left;
+  display: inline;
+  width: 270px;
+  padding: 12px 0;
+  margin-right: 34px;
+  border-bottom: 1px solid #ddd;
+}
+ul.list-sides li.side-item span.side-item-image {
+	float: left;
+	display: inline;
+  margin-right: 5px;
+}
+ul.list-sides li.right {
+  margin-right: 0;
+}
+li.side-item a {
+  float: left;
+  display: inline;
+  margin-right: 4px;
+}
+li.side-item div.side-description {
+  float: left;
+  display: inline;
+  width: 180px;
+  height: 105px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+ul.list-sides li.last-item {
+  border-bottom: none;
+}
+
+/*
+SIDE ITEMS - PROMOTION
+--------------------------------------------------------- */
+ul.list-sides li.side-item-promo {
+  float: left;
+  padding: 12px 0;
+  margin-right: 0;
+}
+li.side-item-promo a {
+  float: left;
+  display: inline;
+  margin-right: 5px;
+}
+li.side-item-promo div.side-description {
+  float: right;
+  margin-left:10px;
+  display: inline;
+  width: 365px;
+  height: auto;
+}
+li.side-item-promo div.side-description p {
+  margin-bottom: 10px;
+}
+
+/*
+SIDE ITEMS - DESCRIPTION
+--------------------------------------------------------- */
+div.side-description h4 {
+  font: bold 12px arial,geneva,helvetica,sans-serif;
+  color: #0078ae;
+  margin: 3px 0;
+}
+div.side-description p {
+  font-size: 11px;
+}
+
+/*
+SIDE ITEMS - ORDER FORM
+--------------------------------------------------------- */
+li.side-item ul.side-order-form li, li.side-item ul.side-order-form-extra li, li.side-item-promo ul.side-order-form li {
+  margin: 0 0 1px 85px;
+  font-size: 11px;
+  border-bottom:1px solid #FFFFFF;
+  border-top:1px solid #FFFFFF;
+}
+li.side-item ul.side-order-form-extra li {
+	margin-left: 1px;
+}
+li.side-item-promo ul.side-order-form li {
+  margin-bottom: 1px;
+}
+ul.side-order-form label, ul.side-order-form-extra label {
+  font-size: 10px;
+  width: 45px;
+  color: #777;
+  float: left;
+  display: inline;
+  padding-top: 2px;
+}
+ul.side-order-form p {
+  font-size: 10px;
+  float: left;
+  display: inline;
+  padding-bottom: 2px;
+  width: 120px
+}
+ul.side-order-form select, ul.side-order-form-extra select, ul.side-order-form input, ul.side-order-form-extra input {
+  font-size: 10px;
+  float: left;
+  display: inline;
+}
+ul.side-order-form .side-size-select, ul.side-order-form .side-option-select {
+  width: 125px;
+}
+ul.side-order-form select {
+  font-size: 10px;
+  float: left
+}
+ul.side-order-form input {
+  font-size: 10px;
+  float: left
+}
+ul.side-order-form span {
+  font-size: 10px;
+  float: left;
+  padding-bottom: 2px;
+  width: 120px
+}
+
+ul.side-order-form li.side-size-li {
+  height: 14px;
+}
+ul.side-order-form li.option-select-section {
+  height: 17px;
+}
+
+ul.side-order-form li.add-to-order, #change-product-option .add-to-order {
+  clear: left;
+  padding-top: 5px;
+}
+ul.side-order-form li.add-to-order a, ul.side-order-form-extra li.add-to-order a, #change-product-option .add-to-order a, .opt-out-link a{
+  padding-right: 19px;
+  background: url(http://cache.dominos.com/express010500/images/buttons/arrow-right.gif) no-repeat right top;
+  font: bold 11px arial,geneva,helvetica,sans-serif;
+  color: #0078ae;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+li.side-item ul li.add-to-order a:hover,
+li.side-item-promo ul li.add-to-order a:hover, li.side-item-extra ul li.add-to-order a:hover, #change-product-option .add-to-order a:hover{
+  background-position: bottom right;
+  color: #f5001e;
+}
+
+/*
+SIDE ITEMS (EXTRA) - ORDER FORM
+--------------------------------------------------------- */
+div.side-description-extra h4 {
+  font: bold 12px arial,geneva,helvetica,sans-serif;
+  color: #0078ae;
+  margin: 3px 0 6px 0;
+}
+/* Temporary style until extras sides are displayed correctly */
+ul.side-order-form-extra span.qty-desc {
+  font-size: 10px;
+  color: #777;
+  /*float: left;*/
+  margin-left: 3px;
+  padding-top: 2px;
+}
+#sides-content{ margin-left:80px; }
+/* End of temp style until extras sides are displaye correctly */
+
+ul.side-order-form-extra select {
+  width: 185px;
+}
+
+ul.side-order-form {
+  height: 70px;
+}
+
+/*
+SIDE ITEMS - ORDER FORM
+--------------------------------------------------------- */
+li.side-item ul {
+  clear: both;
+}
+
+/*  footer */
+
+.footer { margin: 20px 0 0 64px; font-size: 10px; position:relative; }
+
+.footer ul {
+	color:#0064A1;
+	font-size:11px;
+	font-weight:bold;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:5px 0 0 0;
+	float: left;
+	width: 704px;
+}
+
+.footer li {
+	float:left;
+}
+
+.footer li a {
+	padding:0 5px;
+}
+
+.footer p { background:transparent url(http://cache.dominos.com/express010500/images/nav/footer-p.gif) no-repeat scroll 0 0; color:#000000; margin-top: 20px;	padding-left: 95px; width:580px; float:left; }
+
+.footer .paragraph1 {
+	font-size:12px;
+	font-style:normal;
+}
+
+.footer a {
+	color:#0065A1;
+}
+
+.footer a:hover {
+	color:#F5001E;
+}
+
+.footer #footer-images{ position:absolute; top:65px; left:720px; }
+
+.footer #footer-images #lunch { display:block; background:transparent url(http://cache.dominos.com/express010500/images/nav/open-lunch-sprite.gif) no-repeat scroll 0 0; text-indent:-9999px; width:165px; height:23px; margin:0 0 10px 3px; }
+
+.footer #footer-images #lunch:hover{ background-position: 0 -23px; }
+
+.footer #footer-images #coke { display:block; background:transparent url(http://cache.dominos.com/express010500/images/nav/coca-cola-sprite-n6.jpg) no-repeat scroll 0 0; text-indent:-9999px; width:175px; height:71px; }
+
+.footer #footer-images #coke:hover { background-position: 0 -71px; }
+
+#modal div#container {
+	margin:10px;
+	padding:10px;
+	border: solid 5px #0065a1;
+	width: auto;
+	height: auto;
+}
+
+#modal a {
+	color: #0065a1;
+}
+
+
+#modal #wrapper #content  {
+	padding: 16px 0 0 16px;
+	width: 854px;
+}
+
+#modal #wrapper #content h3 {
+	color:#006699;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#modal #wrapper #content h1 {
+	color:#006699;
+	font-size:26px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom: 18px;
+}
+
+#modal #wrapper #content p {
+	margin:0 0 1.5em;
+	width: 96%;
+}
+
+
+#wait-message-div {
+  text-align: center;
+  margin: 0px auto;
+}
+#wait-message-div p {
+  margin: 10px auto;
+}
+
+#footer-sw {
+	float: left;
+	width: auto;
+	height: 24px;
+	position: relative;
+}
+
+#footer-sw a#ftr-sw-fb {
+	background:transparent url(http://cache.dominos.com/express010500/images/nav/ftr-fb.gif) no-repeat scroll top left;
+	width: 113px;
+	height:24px;
+	text-indent: -9999px;
+	position:absolute;
+	left: 0px;
+	top: 0;
+}
+#footer-sw a#ftr-sw-fb:hover{
+	background-position:0 -24px;
+}
+
+#footer-sw a#ftr-sw-tw {
+	background:transparent url(http://cache.dominos.com/express010500/images/nav/ftr-tw.gif) no-repeat scroll top left;
+	width: 93px;
+	height:24px;
+	text-indent: -9999px;
+	position:absolute;
+	left: 116px;
+	top: 0;
+}
+#footer-sw a#ftr-sw-tw:hover{
+	background-position:0 -24px;
+}
+.co-radio-space, .co-payment-div {
+	clear: both;
+	margin-bottom: 6px;
+}
+
+/* General Links Styles */
+a { color: #0064a1; }
+a.arrow-left { background: url(http://cache.dominos.com/express010500/images/buttons/arrow-left.gif) no-repeat 0px 0px; padding-left: 20px; }
+a.arrow-right { background: url(http://cache.dominos.com/express010500/images/buttons/arrow-right.gif) no-repeat 100% 0px; padding-right: 20px; }
+a.account-link { font-weight: bold; text-transform: uppercase; color: #036; font-size: 14px; text-decoration: none; }
+a.account-link:hover { text-decoration: underline; }
+
+/* Form Layout */
+.full-page-form { width: 820px; margin: 20px auto 0; }
+.full-page-form .form-entry { margin: 5px 0; }
+.full-page-form .form-entry label { width: 150px; float: left; text-align: right; margin: 3px 5px 0 0; }
+.full-page-form .form-entry .content { float: left; width: 665px; }
+.full-page-form .form-entry .content .checkbox { margin-left: 150px; }
+.full-page-form .intro-text { margin-bottom: 10px; }
+.full-page-form .form-entry .text { margin: 2px 0 0 0; }
+.full-page-form .form-entry .disclaimer-text { margin: 2px 0 0 0; font-size:10px !important; }
+.full-page-form .form-entry .checkbox { margin: 0 0 0 155px; }
+.full-page-form .form-entry .checkbox label { width: auto; margin: 0; float: none; font-weight: normal; }
+.full-page-form .form-entry .content .checkbox { margin: 5px 0 0 0; }
+
+/* Coupon Layout */
+.coupons-layout .coupons-list li { width: 100%; position: relative; margin-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #069; }
+.coupons-layout .coupons-list li.last { border-bottom: 0px; margin-bottom: 0; }
+.coupons-layout .coupon-image { float: left; width: 160px; height: 145px; }
+.coupons-layout .coupon-overlay { position: absolute; top: 0; left: 0; width: 160px; height: 145px; background: transparent url(http://cache.dominos.com/express010500/images/coupons/order-now.png) no-repeat scroll left top; z-index: 1000; text-indent: -9999px;}
+.coupons-layout .coupon-overlay:hover { background-position: left bottom; }
+.coupons-layout .coupon-information { float: right; width: 435px; }
+.coupons-layout .coupon-price { position: absolute; bottom: 10px; left: 170px; color: #024269; }
+.coupons-layout .coupon-price .price { display: block; font-weight: bold; font-size: 24px; }
+
+/* Featured Coupon */
+.coupons-layout .coupons-list .featured-coupon { height: 110px;}
+.coupons-layout .featured-coupon .coupon-information { float: none; width: auto; margin: 0; }
+.coupons-layout .featured-coupon .coupon-image { width: 100%; height: 100%; float: none; }
+.coupons-layout .featured-coupon .description, .coupons-layout .featured-coupon .link-action { display: none; }
+.coupons-layout .featured-coupon .coupon-price { position: absolute; bottom: 46px; left: auto; right: 50px; }
+.coupons-layout .featured-coupon .coupon-overlay { width: 100%; height: 100%; background: url(http://cache.dominos.com/express010500/images/blank.gif) repeat top left; }
+
+/* Coupons Navigation */
+.coupons-navigation { width: 100%; position: relative; border-top: 1px solid #069; padding-top:10px; }
+.coupons-navigation li a { background-color: #0065A3; color: #fff; padding: 8px 12px; font-weight: bold; font-size: 14px; }
+.coupons-navigation #coupon-nav-next a{ background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-next.png) no-repeat scroll top left; text-indent:-9999px; display:block; width:72px; }
+.coupons-navigation #coupon-nav-prev a{ background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-back-arrow.png) no-repeat scroll top left; text-indent:-9999px; display:block; width:72px; }
+.coupons-navigation #coupon-nav-next a:hover, .coupons-navigation #coupon-nav-prev a:hover{ background-position: 0 -36px; }
+
+/* Coupons Enter Code Box */
+.coupon-box-left { background:url("http://cache.dominos.com/express010500/images/bkg/bkg-coupon-box-left.gif") no-repeat scroll left top transparent; float:left; font-size:11px; height:139px; margin:0 0 0 10px; padding:0; width:10px; }
+.coupon-box-middle { background:url("http://cache.dominos.com/express010500/images/bkg/bkg-coupon-box-middle.gif") repeat-x scroll left top transparent; float:left; height:139px; width: 490px; padding: 20px 0 0 60px; font-size:11px; margin:0; }
+.coupon-box-right { background:url("http://cache.dominos.com/express010500/images/bkg/bkg-coupon-box-right.gif") no-repeat scroll left top transparent; float:left; font-size:11px; height:139px; margin:0 10px 0 0; padding:0; width:10px; }
+
+/* Reengagement Coupon */
+/*#reengage, #incomplete-coupon, #remove-location { margin: 20px; width: 500px; }*/
+#reengage #reengage-strong { font-weight: bold; }
+#cross-sell #cross-img,#reengage #reengage-img { width: 100%; background-color: #fff; text-align: center; border: 1px solid #ccc; }
+#reengage a#reengage-button-no { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-reengage-no.png) no-repeat scroll 0 0; float:left; height:37px; text-indent:-9999px; width:138px; }
+#reengage a#reengage-button-no:hover { background-position: 0 -37px; }
+#reengage a#reengage-button-yes { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-reengage-yes.png) no-repeat scroll 0 0; float:right; height:37px; text-indent:-9999px; width:138px; }
+#reengage a#coupon-button-yes { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-add-coupon.png) no-repeat scroll 0 0; float:right; height:37px; text-indent:-9999px; width:138px; }
+#reengage a#reengage-button-yes:hover, #reengage a#coupon-button-yes:hover { background-position: 0 -37px; }
+
+/* dbox for changing sauces */
+
+#change-product-option .dbox-body { margin-top: 20px; }
+#change-product-option .dbox-body .sauce-option{ margin-bottom:10px; }
+#change-product-option .dbox-body .sauce-option label {float:left; margin:3px 5px 0 0; text-align:right; width:130px;}
+#change-product-option .add-to-order { float:right; }
+
+/* cross-sell dbox */
+#cross-buttons { margin-top:5px; }
+#cross-buttons a#cross-button-no { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-popup-no.gif) no-repeat scroll 0 0; float:left; height:32px; text-indent:-9999px; width:145px; }
+#cross-buttons a#cross-button-no:hover { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-popup-no-hover.gif); }
+#cross-buttons a#cross-button-yes { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-popup-add-order.gif) no-repeat scroll 0 0; float:right; height:32px; text-indent:-9999px; width:137px; }
+#cross-buttons a#cross-button-yes:hover { background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-popup-add-order-hover.gif); }
+
+/* lobby close dbox */
+#lobby-buttons { margin-top:5px;  }
+#lobby-buttons a {
+	height:32px; 
+	text-indent:-9999px; 
+	width:145px; 
+	overflow:hidden;
+	background-position:0px -2px;
+}
+#lobby-buttons a#switchToDelivery {
+	float:left; 
+	background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-lobby-toDelivery.png) no-repeat scroll 0 0; 
+}
+#lobby-buttons a#switchToDelivery:hover { 
+	background-position:0px -41px;
+}
+#lobby-buttons a#cancelCarryout { 
+	float:right; 
+	background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-lobby-cancelCarryout.png) no-repeat scroll 0 0; 
+}
+#lobby-buttons a#cancelCarryout:hover { 
+	background-position:0px -41px;
+}
+
+/* Login */
+#login-page { width: 860px; margin: 0 auto; }
+#login-page .left-col{
+	width:598px;
+}
+#login-submit {
+  margin: 10px 0 0 0;
+  width:99px;
+  height:39px;
+  background:url(http://cache.dominos.com/express010500/images/buttons/login.jpg) top left no-repeat;
+  display:block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  cursor: pointer;
+}
+#login-submit:hover	{
+	background-position:0 -41px;
+}
+#login-links {
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 20px;
+}
+#login-links input {
+	margin-bottom: 20px;
+}
+#login-content p {
+	color:#666;
+	font-size:14px !important;
+	font-weight:bold;
+	margin:15px 0 0 0;
+}
+#login-content #save-info {
+	padding: 20px 0;
+	font-size: 12px;
+}
+#login-content #save-info input {
+	margin: 0 !important;
+	position: relative;
+}
+#login-content form {
+	margin: 20px 0 0 0;
+}
+#login-content #login-form .form-entry{
+	margin: 0;
+}
+#login-content span.login-recommend {
+	display: block;
+	font-size: 10px;
+	padding:5px 0;
+}
+
+#login-content #login-form .username{ float:left; margin-right:40px; }
+
+#login-content .notice { color:#fa001f; font-size: 12px !important; }
+
+#account-reset-page .full-page-form { width: 350px; }
+
+.notice { color:#fa001f; font-size: 12px !important; font-weight: bold; margin: 15px 0; }
+
+#account-page .notice { margin-left: 15px; }
+
+/* Manage Account */
+#account-page { width: 860px; margin: 0 auto; }
+#account-page h3 { position: absolute; top: -10px; left: 10px; background-color: #fff; }
+#account-page h3 span { color: #069; font-size: 18px; line-height: 1; }
+#account-page h3 button { margin-left: 10px; }
+#account-page .box { width: 820px; margin: 20px auto 0; border: 1px solid #000; position: relative; }
+#account-page .box-content { padding: 10px; }
+#account-page dl { margin-top: 5px; }
+#account-page dt { float: left; width: 150px; text-align: right; margin: 5px 5px 0 0; font-weight: bold; }
+#account-page dd { float: left; margin: 5px 0 0 0; }
+#account-page dd.clr { float: none; margin: 0; }
+#account-page table { width: 100%; margin: 5px 0 0 0; }
+#account-page th { font-weight: bold; border-bottom: 2px solid #ccc; padding: 5px 0; }
+#account-page td { padding: 5px 0; border-top: 1px solid #ccc; }
+#account-page td button { margin-right: 5px; }
+#account-page .return-link { float: right; margin-right: 20px; }
+
+/* Change Registration / Account Registration */
+#account-change-registration, #account-registration, #account-change-password, #email-phone-offers, #mobile-ordering{ width: 860px; margin: 0 auto; }
+#account-change-registration .text-messaging, #account-change-password .text-messaging, #account-registration .text-messaging, #email-phone-offers .text-messaging { background-color: #d1dadf; margin: 5px 0; padding-bottom: 5px; }
+#account-change-registration .text-messaging h3, #account-change-password .text-messaging h3, #account-registration .text-messaging h3, #email-phone-offers .text-messaging h3{ font-weight: bold; color: #069; border-bottom: 1px solid #fff; padding: 10px 25px; background-color: #8faebf; }  /* Account Registration Only */
+  #account-registration h3 , #email-phone-offers h3{ background-color: #069; color: #fff; padding: 5px 10px; /*color: #069;*/ font-weight: bold; font-size: 14px; }
+  #account-registration .section, #email-phone-offers .section , #mobile-ordering .section { margin-bottom: 15px; }
+  #account-registration {}
+  #account-registration {}
+  /* Change Registration Only */
+  #account-change-registration .return-link, #account-change-password .return-link { float: right; margin-right: 20px; }
+  #account-change-registration .form-button, #account-change-password .form-button { margin-top: 15px; }
+/* ------------------------- */
+
+/* Add New Location */
+#account-add-location { width: 860px; margin: 0 auto; }
+#account-add-location .form-button { margin-top: 15px; }
+
+/* Remove Location */
+/*#remove-location #button-set{ width:200px; }*/
+#remove-location-back{ background:url(http://cache.dominos.com/express010500/images/buttons/btn-back.png) top left no-repeat scroll; width:55px; height:30px; display:block; text-indent:-9999px; position:absolute}
+#remove-location-back:hover{background-position:0 -30px;}
+#remove-location-continue{ background:url(http://cache.dominos.com/express010500/images/buttons/btn-remove.jpg) top left no-repeat scroll; width:83px; height:30px; display:block; text-indent:-9999px; position:relative; float:right;}
+#remove-location-continue:hover{background-position:0 -30px;}
+
+/* Email, phone, text offers sign-up */
+#email-phone-offers h3 span{ font-size:10px; font-weight:normal; margin-left:15px; }
+#email-phone-offers .full-page-form #sign-up, #mobile-ordering .full-page-form #sign-up { position:absolute;	 }
+#email-phone-offers .full-page-form #sign-up button, #mobile-ordering .full-page-form #sign-up button { background:url(http://cache.dominos.com/express010500/images/buttons/btn-sign-me-up.jpg) top left no-repeat scroll; width:123px; text-indent:-9999px; display:block; height:32px; border:none; }
+#email-phone-offers .full-page-form #sign-up :hover, #mobile-ordering .full-page-form #sign-up :hover{ background-position: 0px -32px; }
+#email-phone-offers .full-page-form #cancel-sign-up, #mobile-ordering .full-page-form #cancel-sign-up { position:relative; float:right; }
+#email-phone-offers .full-page-form #cancel-sign-up a, #mobile-ordering .full-page-form #cancel-sign-up a { background:url(http://cache.dominos.com/express010500/images/buttons/btn-cancel.jpg) top left no-repeat scroll; width:123px; text-indent:-9999px; display:block; height:32px; }
+#email-phone-offers .full-page-form #cancel-sign-up :hover, #mobile-ordering .full-page-form #cancel-sign-up :hover{ background-position: 0px -32px; }
+#email-phone-offers .full-page-form .button-field, #mobile-ordering .full-page-form .button-field{ width:270px; float:right; }
+
+/* Mobile Ordering sign-up */
+#mobile-ordering {position:relative; }
+#mobile-ordering img{ position:relative; margin:20px; }
+#mobile-ordering form{ position:absolute; left:258px; top:25px; width:550px; }
+#mobile-ordering form h1 { color:#336699; font-size:20px; font-weight:bold; }
+#mobile-ordering form p { font-size:14px; }
+#mobile-ordering form .content{ float:none; }
+#mobile-ordering form label{ text-align:left; width:100px; }
+#mobile-ordering .form-entry .disclaimer-text { margin: 10px 0 0 0; }
+#mobile-ordering .full-page-form .button-field{ margin-top:140px; }
+#mobile-ordering .input-error-text{ margin-left:105px; }
+
+/* dbox - Domino's custom lightbox */
+.dbox { display: none; }
+.dbox-frame { margin: 20px; width: 500px; }
+.dbox-head{ font-weight: bold; font-size: 14px; margin: 0 0 10px 0; }
+.dbox-subhead{ font-weight: bold; font-size: 12px; margin: 0 0 10px 0; }
+.dbox-body { margin: 0 0 10px 0; }
+
+/*
+    ColorBox Core Style - Used for Error lightboxes
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:hidden;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+
+
+/*
+    Example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:url(http://cache.dominos.com/express010500/images/dbox/overlay.png) 0 0 repeat;}
+#colorbox{}
+    #cboxTopLeft{width:21px; height:21px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -100px 0 no-repeat;}
+    #cboxTopRight{width:21px; height:21px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -129px 0 no-repeat;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -100px -29px no-repeat;}
+    #cboxBottomRight{width:21px; height:21px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -129px -29px no-repeat;}
+    #cboxMiddleLeft{width:21px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(http://cache.dominos.com/express010500/images/dbox/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(http://cache.dominos.com/express010500/images/dbox/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -75px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious.hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -50px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext.hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(http://cache.dominos.com/express010500/images/dbox/loading_background.png) center center no-repeat;}
+        #cboxLoadingGraphic{background:url(http://cache.dominos.com/express010500/images/dbox/loading.gif) center center no-repeat;}
+        #cboxClose{position:absolute; top: 0; right:0; background:url(http://cache.dominos.com/express010500/images/dbox/controls.png) -25px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose.hover{background-position:-25px -25px;}
+
+/*
+    The following fixes png-transparency for IE6.
+    It is also necessary for png-transparency in IE7 & IE8 to avoid 'black halos' with the fade transition
+
+    Since this method does not support CSS background-positioning, it is incompatible with CSS sprites.
+    Colorbox preloads navigation hover classes to account for this.
+
+    !! Important Note: AlphaImageLoader src paths are relative to the HTML document,
+    while regular CSS background images are relative to the CSS document.
+*/
+/*.cboxIE #cboxTopLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderTopLeft.png, sizingMethod='scale');}
+.cboxIE #cboxTopCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderTopCenter.png, sizingMethod='scale');}
+.cboxIE #cboxTopRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderTopRight.png, sizingMethod='scale');}
+.cboxIE #cboxBottomLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderBottomLeft.png, sizingMethod='scale');}
+.cboxIE #cboxBottomCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderBottomCenter.png, sizingMethod='scale');}
+.cboxIE #cboxBottomRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderBottomRight.png, sizingMethod='scale');}
+.cboxIE #cboxMiddleLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderMiddleLeft.png, sizingMethod='scale');}
+.cboxIE #cboxMiddleRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/dbox/ie-borderMiddleRight.png, sizingMethod='scale');}*/
+
+/* Coupon Wizard */
+#coupon-wizard {
+  width:607px;
+  background-color:#e3edf4;
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-holder.bg.gif) no-repeat #eaf0f6;
+  margin-bottom: 10px;
+  display: none;
+}
+
+#coupon-wizard h2 {
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-h2-bg.gif) no-repeat;
+  text-indent:-9999px;
+  width:21px;
+  height:65px;
+  margin:0px;
+  padding:0px;
+  float:left;
+}
+
+#coupon-wizard div.coupon-wizard-content {
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-details-bg.gif) repeat-y;
+}
+
+#coupon-wizard div.details {
+  font-family:Arial;
+  font-size:10px;
+  margin-left:35px;
+  padding-bottom:5px;
+}
+
+#coupon-wizard div.details .nolink {
+  height:12px;
+  overflow:hidden;
+  font-size:10px;
+  font-weight:bold;
+  text-decoration:none;
+  margin-top:7px;
+  color:#fa001f;
+  width:auto;
+  padding-bottom:5px;
+}
+
+#coupon-wizard div.details p.top {
+  position:relative;
+  top:-3px;
+  color:#0078ae;
+  width:459px;
+  line-height:1.5;
+  margin: 0 0 0 0;
+}
+
+* HTML #coupon-wizard div.details p.top {
+  top:-6px;
+}
+
+*:first-child+html #coupon-wizard div.details p.top {
+  top:-6px;
+}
+
+#coupon-wizard div.details a.top {
+  height:12px;
+  font-size:10px;
+  display:block;
+  font-weight:bold;
+  text-decoration:none;
+  margin-top:7px;
+  color:#0064a1;
+  width:auto;
+  padding-bottom:5px;
+}
+
+
+
+
+/* confirmation page */
+#confirmation-details { margin: 130px 0 0 34px; width:804px; }
+#confirmation-details h2 { color:#024269; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; padding:10px 0; }
+#confirmation-details p { color:#000; font-size:12px; }
+.confirmation-detail p { margin-left:15px; }
+#confirmation-details p span { font-weight: bold; }
+.confirmation-detail table { width:790px; margin-left:15px; border:1px solid #999999; }
+.confirmation-detail .table-header { background:#CCC; height:25px; }
+.confirmation-detail table p { margin-left: 5px; }
+.confirmation-detail .amount-column { text-align:right; padding-right:10px; }
+.confirmation-detail .table-header p, #order-info #callback, #confirmation-details span, .bold { font-weight:bold; }
+#order-info #callback { margin:10px 15px; }
+#confirmation-details #homepage-link { margin-top:30px; }
+#confirmation-details #link { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:none; background:url(http://cache.dominos.com/express010500/images/bkg/bkg-link.gif) top right scroll no-repeat; padding-right:10px; }
+#confirmation-details .disclaimer { font-size:10px; }
+#confirmation-details .tb-btm-border {
+	border-bottom :1px solid #DEDEDE;
+}
+#confirmation-details .cd-amt-row {
+	border-top:1px solid #cccccc;
+	padding:4px 10px 4px 0;
+	text-align:right;
+	vertical-align:top;
+	background-color: #dedede;
+}
+#confirmation-details .cd-desc-row {
+	border-top:1px solid #cccccc;
+	padding:4px 10px 4px 0;
+	vertical-align:top;
+	background-color: #dedede;
+}
+
+#confirmation-details .cd-qty-row {
+	border-top:1px solid #cccccc;
+	padding:4px 10px 4px 0;
+	vertical-align:top;
+	text-align:center;
+	background-color: #dedede;
+}
+#confirmation-details .co-charges-row p {
+	font-weight: bold;
+}
+
+#content .tracker, #content #tracker { margin-left: -25px; height:550px }
+
+#payment-details table { border:none; }
+#payment-details tr { height:px; }
+#payment-details .payment-indent { margin-left:40px; }
+
+
+
+
+
+#coupon-wizard div.details a.top span {
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-arrow-blue.gif) no-repeat scroll right top;
+  padding:0px 16px 2px 0px;
+}
+
+#coupon-wizard div.details a:hover {
+  color:#fa001f;
+}
+
+#coupon-wizard div.details a:hover span{
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-arrow-red.gif) no-repeat scroll right top;
+  color:#fa001f;
+}
+
+#coupon-wizard span.bottom {
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-holder-bg-bottom.gif) no-repeat #eaf0f6;
+  width:607px;
+  height:12px;
+  display:block;
+  overflow:hidden;
+  clear:both;
+}
+
+#coupon-wizard a.close {
+  background: url(http://cache.dominos.com/express010500/images/wizard/coupon-close-bg.gif) no-repeat;
+  text-indent:-9999px;
+  display:block;
+  height:11px;
+  position:relative;
+  left:480px;
+  top:10px;
+  width: 88px;
+}
+
+* HTML #coupon-wizard a.close {
+  left:390px;
+  overflow:hidden;
+}
+
+#coupon-wizard a:hover {
+  background-position:bottom left;
+}
+
+* HTML #coupon-wizard a:hover {
+  background-position:-11px left;
+}
+
+#couponError {
+  width: 340px;
+  margin-bottom: 12px;
+}
+
+#gen-indent {
+	width: 800px;
+	margin-left: 24px;
+}
+
+#nutri-indent {
+	width: 832px;
+	margin-left: 20px;
+}
+
+h2.gen {
+	font-size: 22px;
+	font-weight: bold;
+	color: #069;
+}
+
+#gen-indent h3, #nutri-indent h3 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #069;
+	margin: 20px 0 -10px 0;
+}
+
+#gen-indent p, #nutri-indent p {
+	padding: 0;
+	margin: 10px 0;
+}
+
+#gen-indent li {
+	/*margin-left: 20px;
+	width: 760px;*/
+}
+
+#legal-nav {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 24px;
+	color: #069;
+}
+
+#legal-nav a {
+	color: #069;
+}
+
+#wait-text {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.order-loading {
+	display: block;
+	margin: 4px 0 0 2px;
+}
+
+.hilite-cb {
+	border: #000 solid 1px !important;
+	background-color: #f00 !important;
+	font-weight: bold;
+	color: #fff !important;
+}
+
+.unhilite-cb  {
+	border: #024269 solid 1px !important;
+	background-color: #fff !important;
+	font-weight: normal;
+	color: #000 !important;
+}
+
+/* messages for partial items added to cart */
+#cart-message p{ color:#333; font-size:14px; font-weight:bold; margin:10px 0 0 20px; width:500px; }
+#olo-added-item{ background:url(http://cache.dominos.com/express010500/images/bkg/bkg-coupon-complete.jpg) top left scroll no-repeat; width:607px; height:92px; }
+#olo-added-item p{ color:#FFF; font-size:14px; }
+
+p.ini-prompt, .left-indent {
+  margin: 0px 0px 15px 20px;
+}
+.ini-prompt {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  clear: left;
+}
+.ini-prompt br {
+  margin-bottom: 5px;
+}
+
+#checkout-cards, #checkout-doordebit-cards {
+	clear: both;
+	margin: 3px 0 0 16px;;
+}
+
+#checkout-cards div, #checkout-doordebit-cards div {
+	float: left;
+	margin-right: 5px;
+}
+
+a.addToOrderAndCheckout {
+	background:transparent url(http://cache.dominos.com/express010500/images/buttons/btn-addtoorder-checkout.png) no-repeat scroll left top;
+	display:block;
+	height:30px;
+	line-height:1px;
+	margin:6px 0 16px;
+	text-indent:-9999px;
+	width:180px;
+}
+
+a.addToOrderAndCheckout:hover {
+	background-position:0 -30px;
+}
+
+#myPastOrders, #dominosFavorites {
+	display:block;
+	float:left;
+}
+
+.scrollLeft, .scrollRight {
+	float:left;
+	height:88px;
+	line-height:130px;
+	width:19px;
+}
+
+.scroller {
+	background:#EFEDEE none repeat scroll 0 0;
+	float:left;
+	height:138px;
+	width:518px;
+}
+
+.scroller > div {
+	background:#EFEDEE none repeat scroll 0 0;
+	display:block;
+	width:518px;
+}
+
+.flyoutModule {
+	background:transparent url(http://cache.dominos.com/express010500/images/bkg/bkgFlyoutModule.gif) no-repeat scroll left top;
+	float:left;
+	font-size:11px;
+	height:122px;
+	margin-right:10px;
+	padding:8px 14px;
+	width:221px !important;
+}
+
+.flyoutModule h3 {
+	color:#0065A3;
+	font-size:14px;
+	margin-bottom:8px;
+}
+
+.flyoutModule ul li {
+	margin:0 0 4px 4px;
+}
+
+.w100 h4 {
+	color:#4F4F4F;
+	font-size:18px;
+	margin-bottom:5px;
+}
+
+.w100 h4.second {
+	margin-top:16px;
+}
+.changeLink a, .changeLink a:link, .changeLink a:hover, .changeLink a:visited {
+	color:#21547B;
+	font-size:10px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+h4 .changeLink {
+	display:inline-block;
+	float:none;
+	margin-left:12px;
+}
+
+.popular-float-pizza {
+	float: left;
+	width: 280px;
+}
+.popular-float-other {
+	float: left;
+	width: 240px;
+}
+.pop-check {
+	/*clear: both;*/
+	display: block;
+	float: left;
+	width: 20px;
+}
+.pop-desc {
+	display: block;
+	font-size: 11px;
+	width:220px;
+	padding-left:20px;
+	.padding-left:3px;
+	.padding-top:3px;
+}
+#print-page-title {
+	display: none;
+}
+.logo {
+}
+.logo-ca {
+	margin-left: 10px;
+	margin-top: -8px;
+	height: 100px;
+	width: 100px;
+}
+
+#errorPage {
+	height: 200px;
+}
+
+#errorPage h3 {
+	background:transparent url(http://cache.dominos.com/express010500/images/misc/error.h3.bg.gif) no-repeat scroll 0 0;
+	font-size:15px;
+	height:30px;
+	margin-top:8px;
+	text-indent:-9999px;
+}
+
+
+/* Opt out page */
+.opt-out-container{ margin-left:10px; }
+#opt-out-reasons {margin-top: 24px; }
+#opt-out-options #remove { width:390px; float:left;}
+#opt-out-options #remove-mobile { width:390px; float: left; }
+#opt-out-options #remove form, #opt-out-options #remove-mobile form{ margin-left:10px; }
+#opt-out-options #remove form input, #opt-out-options #remove-mobile form input{ margin:10px 0 0 10px; }
+#opt-out-options #keep { width:350px; float:left; margin-left:20px; }
+#opt-out-options #keep-mobile { width:350px; float:left; margin-left:20px;}
+#opt-out-options #keep p, #opt-out-options #keep-mobile p { }
+
+#opt-out-options label{padding-left:0; }
+#opt-out-options .reasons { margin: 24px 0; }
+#opt-out-options .reasons li { margin-bottom: 3px; }
+
+#opt-out-options .form-entry {margin:16px 0;}
+#opt-out-options .form-entry label{}
+#opt-out-options .form-entry input{border: solid 1px #aaa;}
+
+#opt-out-options #header-msg { margin:0 0 20px 0; }
+.opt-out-container a {}
+.opt-out-border { border:3px solid #6699cc; padding:12px; }
+.opt-out-thankyou { margin-bottom:20px; }
+.opt-out-container p {margin: 0 0 10px;}
+.opt-out-inner-container { height: 85px; width:815px; }
+.opt-out-container .disclaimer {width:350px; font-size:10px; }
+.opt-out-container p.disclaimer {margin-top: -10px; }
+
+/* Hot Deals */
+#hotdeals-noflash a { margin: 0 5px 8px 0; }
+#hotdeals-noflash a { text-indent:-9999px; display:block; height:182px; width:197px; float:left; }
+#hotdeals-noflash #tout-1-noflash { background:transparent url(http://cache.dominos.com/express010500/images/offers/tout-n7-599.jpg) no-repeat top left scroll; }
+#hotdeals-noflash #tout-1-noflash:hover { background-position: 0px -182px; }
+#hotdeals-noflash #tout-2-noflash { background:transparent url(http://cache.dominos.com/express010500/images/offers/tout-n8-200.jpg) no-repeat top left scroll; }
+#hotdeals-noflash #tout-2-noflash:hover { background-position: 0px -182px; }
+#hotdeals-noflash #tout-3-noflash { background:transparent url(http://cache.dominos.com/express010500/images/offers/tout-n7-behindThePizza.jpg) no-repeat top left scroll; }
+#hotdeals-noflash #tout-3-noflash:hover { background-position: 0px -182px; }
+
+/* Lunch Menu */
+/*#entrees-tab .lunch-menu { width:608px !important; }*/
+.lunch-menu { width:800px !important; }
+#page-lunch #header { background: url(http://cache.dominos.com/express010500/images/bkg/lunch-header.jpg) top left no-repeat; text-indent: -9999px; margin: 0 10px 10px 0; height:110px; width:610px; }
+#page-lunch #coke-offer a{ background: url(http://cache.dominos.com/express010500/images/bkg/lunch-coupon.jpg) top left no-repeat; text-indent: -9999px; margin: 0 0 10px 0; height:72px; display:block; }
+
+/* Product Review */
+#product-review .back { background: url(http://cache.dominos.com/express010500/images/bkg/bkg-back-arrow.gif) no-repeat left center; padding-left: 10px; color: #024269; font-size: 18px; text-decoration: none; text-transform: uppercase; }
+#product-review .generic-header { margin-top: 5px; }
+#product-review .photo { float: left; width: 420px; margin: 10px 0 0 0; }
+#product-review .information { width: 160px; float: right; margin: 10px 10px 0 0; color: #000; }
+#product-review .product-description { font-weight: bold; }
+#product-review .add-to-order { display: block; padding: 25px 0; margin: 25px 0; border: 1px solid #c2ced3; border-width: 1px 0; }
+#product-review .add-to-order a { text-indent: -9999px; margin: 0 auto; width: 140px; height: 35px; display: block; background: url(http://cache.dominos.com/express010500/images/bkg/bkg-add-to-order-small.gif) no-repeat 0 0; }
+#product-review .add-to-order a:hover { background-position: 0 -35px; }
+#product-review .bv-content { margin: 55px 0 0 0; }
+#general-menu-product-review #product-review { margin: 0 20px; }
+#general-menu-product-review #product-review .information { width: 380px; }
+#general-menu-product-review #product-review .generic-header { background:url(http://cache.dominos.com/express010500/images/bkg/hdr-specialty-long.jpg) top left no-repeat; }
+#general-menu-product-review #product-review .add-to-order a { margin: 0; }
+/* StJudes */
+
+.stjudes { position:relative; margin-bottom:4px; zoom:1; }
+.stjude-banner-short { background: transparent url(http://cache.dominos.com/express010500/images/stJude/stjude-banner-602.jpg) no-repeat left top; text-indent:-9999px; width:602px; display:block; height:112px; margin-left:4px; zoom:1; }
+.stjude-banner-long { background: transparent url(http://cache.dominos.com/express010500/images/stJude/stjude-banner-812.jpg) no-repeat left top; text-indent:-9999px; width:812px; display:block; height:114px; zoom:1; }
+.stjude-banner-long .stjude-radios { text-indent:0px; }
+.stjudes .stjude-sidebar { background: transparent url(http://cache.dominos.com/express010500/images/stJude/stjude-sidebar.jpg) no-repeat left top; text-indent:-9999px; display:block; width:232px; height: 286px; zoom:1; }
+.stjudes .stjude-banner-home-location { background: transparent url(http://cache.dominos.com/express010500/images/stJude/stjude-banner-591.jpg) no-repeat left top; position: relative; text-indent:-9999px; display:block; width:591px; height: 111px; margin-left:7px; }
+.stjudes .stjude-banner-short .stjude-donation { position:relative; text-indent:0; margin:65px 0 0 180px; }
+.stjudes .stjude-banner-home-location .stjude-donation { position:absolute; text-indent:0; top:76px; left: 170px; }
+.stjudes .stjude-banner-long .stjude-donation { position:relative; test-indent:0; margin:68px 0 0 184px; }
+.stjudes .stjude-sidebar .stjude-donation { position:relative; text-indent:0; margin:130px 0 0 20px; }
+.stjudes .stjude-donation .donation-label { margin-right:8px; }
+.stjudes .stjude-sidebar .stjude-donation .donation-label { margin-right:4px; }
+.stjudes .stjude-donation .donation-amount { position: absolute; left: 232px; top: 0; }
+.stjudes .stjude-sidebar .stjude-donation .donation-amount { position: absolute; left: 16px; top: 28px; }
+.stjudes .stjude-banner-long .stjude-donation .donation-amount { margin-left: 14px; }
+.stjudes .stjude-sidebar .place-donation { cursor: pointer; background: transparent url(http://cache.dominos.com/express010500/images/stJude/donation-button.jpg) no-repeat top left; text-indent:-9999px !important; height:35px; width:167px; border:none; position:absolute; top:200px; left:30px; }
+.stjudes .place-donation { cursor: pointer; background: transparent url(http://cache.dominos.com/express010500/images/stJude/donation-button.jpg) no-repeat top left; text-indent:-9999px !important; height:35px; width:167px; border:none; position:absolute; top:20px; left:400px; }
+.stjudes .place-donation:hover { background-position: 0 -35px;}
+.stjudes .stjude-banner-long .stjude-donation .place-donation { top: -34px; left:66px; text-indent:-9999px; }
+.stjudes .stjude-sidebar .stjude-donation .place-donation { top: -4px; left:14px; }
+.stjudes .stjude-thank-you { background: transparent url(http://cache.dominos.com/express010500/images/stJude/thank-you.jpg) top left no-repeat; height:21px; }
+.stjudes .stjude-banner-home-location .stjude-thank-you { top: 64px; left:172px; position:relative; }
+.stjude-radios {
+	position: absolute; left: 0; top: 0; width: 216px;
+}
+.stjudes input[type="radio"] { padding: 2px 3px 0 7px; }
+.stjudes .stjude-banner-long .place-donation {
+	left: 620px !important;	
+	top: 40px;
+}
+
+/* Microvolt Specific -- leave at bottom */
+.cooking-instr-input { font-size: 12px; padding: 2px; margin: 6px 0 6px 0; }
+.cooking-instr, .cooking-instr-input { display: none; }
+.cooking-instr { clear: left; }
+.cooking-instr em { font-weight: bold; }
+.order-item-cooking-instr { display: none; }
+.order-item-cooking-instr em { font-weight: bold; }
+.ci-tooltip { background-color: #c3d5df; color: #1d6e9f; padding: 8px; font-weight: normal; line-height: 10px; display: none; }
+
+.tinyTip {
+	display:block;
+	padding: 15px 0 0;
+	width: 355px;
+	background: #F8E891;
+	margin: 130px 280px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border: medium #FFCB00 solid;
+}
+.tinyTip .content {
+	font-size: 14px;
+	color: #010101;
+	padding: 0 15px;
+}
+.tinyTip .bottom {
+	height: 20px;
+}
+
+.account_warning_box {
+	background: #F8E891;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:10px;
+	margin:5px;
+	border: thin #FFCB00 solid;
+	display:none;
+	font-size:14px;
+}
+
+.checkout-disc {
+	clear:both;
+	display:block;
+	padding:16px 0 0 0;
+	font-size:10px;
+}
+.t7_numbs {
+	font-size: 28px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	color: #ffffff;
+	background-image: url(http://cache.dominos.com/express010500/images/misc/Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 46px;
+	height:33px;
+	background-color:#ffffff;
+	padding: 0px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+}
+#defaultCountdown {
+	width: 110px;
+	text-align: center;
+	top: 0;
+	position: fixed;
+	left:50%;
+	cursor:pointer;		
+}

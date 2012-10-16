@@ -1,0 +1,42 @@
+$(document).ready(function(){
+  //@force all external links to open in new window
+  //select all a link start with http:// add attribute target =_blank
+      $('a[href^=http://]').attr('target','_blank');
+
+  //@solve double submit problem(latency) by disable button after first time submit
+  //select submit button, set attribute to disabled
+      $('form').submit(function(){
+        $(':submit',this).attr('disabled','disabled');
+      });
+//@set table width = 940px
+//select table, set css width = 940
+      $('table').css('width','940px');
+ //@ select table each tr's first td , add class bold
+      $('table tr').each(function(){
+        $('td:first',this).addClass('highlight_normal');});
+
+//@mouseover toggleClass
+//select #toggleClass, set toggleClass inside mourseover event
+  $('#toggleClass').mouseover(function(){$('#toggleClass').toggleClass('highlight_normal');
+    }).mouseout(function(){$('#toggleClass').toggleClass('highlight_normal');});
+
+  // btn.click{ if txt.isenabled -> disable; else->enable}
+       $('#btn_enable_textbox').click(function(){
+         if($('#txt_enable').is(':enabled')){
+           $('#txt_enable').attr('disabled','disabled');
+           $('#btn_enable_textbox').attr('value','enable textbox');
+         }else{//txt is disabled, enable it
+           $('#txt_enable').attr('disabled','');
+           $('#btn_enable_textbox').attr('value','disable textbox');           
+         }         
+       });//end of click fn
+
+       $("input[name='rdo_sause1']").change(
+       function(){
+         if ($("input[name='rdo_sause1']:checked").val()) {
+                alert($("input[name='rdo_sause1']:checked").val());
+            }
+       });
+              
+//end of $(document).ready()
+});

@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <htmla class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ads Platform CPC chart</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">        
+    </head>
+    <body>
+        <div id="container">
+             <div id="chart" style="width: 800px; height: 400px; margin: 0 auto"></div>
+        </div> <!--! end of #container -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+        <script defer src="js/libs/highcharts.js"></script>
+
+        <script type="text/javascript">
+
+			var chart;
+			$(document).ready(function() {
+				chart = new Highcharts.Chart({
+					chart: {
+						renderTo: 'chart',
+						defaultSeriesType: 'area'
+					},
+					title: {
+						text: 'CPC Revenue'
+					},
+					subtitle: {
+						text: 'Ads Platform'
+					},
+					xAxis: {
+						categories: ['3/2001', '4/2011', '5/2011', '6/2011', '7/2011', '8/2011', '9/2011'],
+						tickmarkPlacement: 'on',
+						title: {
+							enabled: false
+						}
+					},
+					yAxis: {
+						title: {
+							text: 'Millions'
+						},
+						labels: {
+							formatter: function() {
+								return this.value / 1000;
+							}
+						}
+					},
+					tooltip: {
+						formatter: function() {
+							return ''+
+								 this.x +': '+ Highcharts.numberFormat(this.y, 0, ',') +' millions';
+						}
+					},
+					plotOptions: {
+						area: {
+							stacking: 'normal',
+							lineColor: '#666666',
+							lineWidth: 1,
+							marker: {
+								lineWidth: 1,
+								lineColor: '#666666'
+							}
+						}
+					},
+					series: [{
+						name: 'US',
+						data: [502, 635, 809, 947, 1402, 3634, 5268]
+					}, {
+						name: 'Asia',
+						data: [106, 107, 111, 133, 221, 767, 1766]
+					}, {
+						name: 'Europe',
+						data: [163, 203, 276, 408, 547, 729, 628]
+					}, {
+						name: 'Austrilia',
+						data: [18, 31, 54, 156, 339, 818, 1201]
+					}]
+				});
+
+
+			});
+
+		</script>
+
+        <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+        <!--[if lt IE 7 ]>
+          <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
+</html>
